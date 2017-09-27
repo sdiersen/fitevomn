@@ -1,31 +1,33 @@
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
-	coffee = require('gulp-coffee'),
 	concat = require('gulp-concat'),
 	browserify = require('gulp-browserify'),
 	compass = require('gulp-compass'),
 	connect = require('gulp-connect');
 
-var coffeeSources = ['components/coffee/*.coffee'];
+
 var jsSources = [
+	'node_modules/jquery/dist/jquery.min.js',
+	'node_modules/bootstrap/dist/js/bootstrap.min.js',
+	'node_modules/tether/dist/js/tether.min.js',
 	'components/scripts/*.js'
 ];
-var sassSources = [
-	'components/sass/style.css'
+// var sassSources = [
+// 	'node_modules/bootstrap/scss/bootstrap.scss',
+// 	'components/sass/style.scss'
+// ];
+
+var cssSources = [
+	'node_modules/bootstrap/dist/css/bootstrap.min.css',
+	'components/css/*.css'
 ];
+
 var htmlSources = [
 	'builds/development/*.html'
 ];
 var jsonSources = [
 	'builds/development/js/*.json'
 ];
-
-gulp.task('coffee', function() {
-	gulp.src(coffeeSources)
-		.pipe(coffee({bare: true})
-			.on('error', gutil.log))
-		.pipe(gulp.dest('components/scripts'))
-});
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
@@ -35,17 +37,24 @@ gulp.task('js', function() {
 		.pipe(connect.reload())
 });
 
-gulp.task('compass', function() {
-	gulp.src(sassSources)
-		.pipe(compass({
-			sass: 'components/sass',
-			image: 'builds/development/images',
-			style: 'expanded' //nested, expanded, compact, compressed
-		})
-			.on('error', gutil.log))
+gulp.task('css', function() {
+	gulp.src(cssSources)
+		.pipe(concat('style.css'))
 		.pipe(gulp.dest('builds/development/css'))
 		.pipe(connect.reload())
 });
+
+// gulp.task('compass', function() {
+// 	gulp.src(sassSources)
+// 		.pipe(compass({
+// 			sass: 'components/sass',
+// 			image: 'builds/development/images',
+// 			style: 'expanded' //nested, expanded, compact, compressed
+// 		})
+// 			.on('error', gutil.log))
+// 		.pipe(gulp.dest('builds/development/css'))
+// 		.pipe(connect.reload())
+// });
 
 gulp.task('html', function() {
 	gulp.src(htmlSources)
@@ -58,9 +67,9 @@ gulp.task('json', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch(coffeeSources, ['coffee']);
 	gulp.watch(jsSources, ['js']);
-	gulp.watch('components/sass/*.scss', ['compass']);
+	//gulp.watch('components/sass/*.scss', ['compass']);
+	gulp.watch(cssSources, ['css']);
 	gulp.watch(htmlSources, ['html']);
 	gulp.watch(jsonSources, ['json']);
 });
@@ -73,4 +82,4 @@ gulp.task('connect', function() {
 	});
 })
 
-gulp.task('default', ['html','json','coffee', 'js', 'compass', 'connect', 'watch']);
+gulp.task('default', ['html','json', 'js', 'css', 'connect', 'watch']);
