@@ -5,138 +5,178 @@
 		<meta charset="utf-8">
 		<!-- <link rel="stylesheet" href="css/style.css"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<style>
-			header {
-				width:100vw;
-			}
-			#headerCarousel {
-				width:80%;
-				margin:0 auto;
-				border: 2px solid black;
-			}
-			.picStyle {
-				margin:0 auto;
-			}
-		</style>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header>
-			<div id="headerCarousel" class="carousel slide" data-ride"carousel">
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="images/banner/personal-training-banner-3a.jpg" class="picStyle img-circle"  alt="">
-					</div>
-					<div class="item">
-						<img src="images/banner/personal-training-banner-3b.jpg" class="picStyle img-circle" alt="">
-					</div>
-					<div class="item">
-						<img src="images/banner/group-fitness-banner-1a.jpg" class="picStyle img-circle" alt="">
-					</div>
-					<div class="item">
-						<img src="images/banner/group-fitness-banner-1b.jpg" class="picStyle img-circle" alt="">
-					</div>
-					<div class="item">
-						<img src="images/banner/group-fitness-banner-1c.jpg" class="picStyle img-circle" alt="">
-					</div>
-					<div class="item">
-						<img src="images/banner/group-fitness-banner-1d.jpg" class="picStyle img-circle" alt="">
-					</div>
-				</div><!--carousel-inner -->
-				<a class="left carousel-control" href="#headerCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#headerCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div><!-- carousel slide -->
+		<header class="container">
+			<div id="logoRow" class="row">
+				<div id="topLogo" class="col-12">
+					<img id="topLogoPic" src="images/logos/fit_easy_logo.png" />
+				</div> <!-- col-12 -->
+			</div><!-- row -->
+			<div id="headerRow" class="row">
+				<div id="carouselWrapper" class="col-sm-8">
+					<div id="headerCarousel" class="carousel slide" data-ride"carousel">
+						<div class="carousel-inner">
+							<div  class="item active">
+								<img data-club-location="location-buffalo" id="name-of-event" src="images/banner/buffalo-banner.png" alt="">
+							</div>
+							<div class="item">
+								<img data-club-location="location-monticello" id="monticellos-event" src="images/banner/monticello-banner.png" alt="">
+							</div>
+							<div class="item">
+								<img data-club-location="location-zimmerman" id="whats-up-zimmerman" src="images/banner/zimmerman-banner.png" alt="">
+							</div>
+						</div><!--carousel-inner -->
+						<a class="left carousel-control" href="#headerCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#headerCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div><!-- carousel slide -->
+				</div><!-- carouselWrapper -->
+				<div id="headerLogo" class="col-sm-4">
+					<p class="headerTag">FitEvoMN </p><br/>
+					<ul>
+						<li> 
+							<a href="#"> <span class="headerTag">Buffalo</span></a>
+							<ul id="location-buffalo">
+								<li><span class="headerTag">name-of-event</span></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"> <span class="headerTag">Monticello</span> </a>
+							<ul id="location-monticello">
+								<li><span class="headerTag"></span></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"> <span class="headerTag">Zimmerman</span></a>
+							<ul id="location-zimmerman">
+								<li><span class="headerTag"></span></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--headerLogo-->
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col">
+					<h1>Fitness Evolution Minnesota</h1>
+				</div>
+			</div>
 		</header>
 		<nav>
-			<div class="container">
-      <h2>Glyphicon Examples</h2>
-      <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>    
-      <p>Envelope icon as a link:
-        <a href="#">
-          <span class="glyphicon glyphicon-envelope"></span>
-        </a>
-      </p>
-      <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-      <p>Search icon on a button:
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-search"></span> Search
-        </button>
-      </p>
-      <p>Search icon on a styled button:
-        <button type="button" class="btn btn-info">
-          <span class="glyphicon glyphicon-search"></span> Search
-        </button>
-      </p>
-      <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
-      <p>Print icon on a styled link button:
-        <a href="#" class="btn btn-success btn-lg">
-          <span class="glyphicon glyphicon-print"></span> Print 
-        </a>
-      </p> 
-    </div>
+			
 		</nav>
-		<div class="container">
-  <h2>Carousel Example</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/a.png" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="images/b.png" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="images/c.png" alt="New york" style="width:100%;">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-		<h1>Fitness Evolution Minnesota</h1>
-		<p>
-			More Than a Club, We Are a Community. We Pride Ourselves on Customer Service, Cleanliness, and Friendliness to Give You the Best Experience Possible. It’s What Sets Us Apart From the Rest!
-		</p>
-		<p>
-			Fitness Evolution believes that you should be able to improve your health without breaking the bank. We love to provide our members with a high-quality club experience while keeping your membership fee as low as possible.
-		</p>
-		<p>
-			We have built a meaningful community so that all of our members can feel comfortable at all times. Our staff and highly educated personal trainers are always willing to provide a helping hand so that you can achieve your fitness goals. As soon as you step foot in our club, we want you to feel like it’s a home away from home.
-		</p>
-		<p>
-			Our clubs in Buffalo, Monticello, and Zimmerman offer many forms of exercise to fit your style or your particular mood for the day. You can get a great workout using our cardio equipment or by lifting free weights in our weight rooms. Want to mix it up a bit? Try one of our group fitness classes such as Zumba®, Les Mills Body Pump®, or Flex or take one of our Yoga classes to relieve the day's stress.
-		</p>
-		<p>
-			While each of our three clubs offers slightly different amenities, they all offer a few that really help our members get the most out of every day. Each club has a swimming pool that is kept between 82° and 84°, which is perfect for either starting or ending the day with a relaxing swim. Looking to relax in a little heat? Try our spas and saunas, both are great options after a game or two of racquetball in one of our racquetball courts with your friends.
-		</p>
-		<button class="btn btn-primary">Join Our Clubs! button</button>
-		<h2>Personal Training</h2>
-		<div class="subtitle">
-			Pursue your health and fitness goals with our nationally accredited personal trainers!
-		</div>
+		<main>
+			<p id="titleParagraph">
+				More Than a Club, We Are a Community. We Pride Ourselves on Customer Service, Cleanliness, and Friendliness to Give You the Best Experience Possible. It’s What Sets Us Apart From the Rest!
+			</p>
+			<div id="introParagraphID">
+				<p>
+					Fitness Evolution believes that you should be able to improve your health without breaking the bank. We love to provide our members with a high-quality club experience while keeping your membership fee as low as possible.
+				</p>
+				<p>
+					We have built a meaningful community so that all of our members can feel comfortable at all times. Our staff and highly educated <a class="pageLink" href="http://www.fitevomn.com/#personalTrainingID">personal trainers</a> are always willing to provide a helping hand so that you can achieve your fitness goals. As soon as you step foot in our club, we want you to feel like it’s a home away from home.
+				</p>
+				<p>
+					Our clubs in Buffalo, Monticello, and Zimmerman offer many forms of exercise to fit your style or your particular mood for the day. You can get a great workout using our cardio equipment or by lifting free weights in our weight rooms. Want to mix it up a bit? Try one of our <a class="pageLink" href="http://www.fitevomn.com/#groupFitnessClassesID">group fitness classes</a> such as Zumba&reg;, Les Mills Body Pump&reg;, or Flex or take one of our Yoga classes to relieve the day's stress.
+				</p>
+				<p>
+					While each of our three clubs offers slightly different <a class="pageLink" href="http://wwww.fitevomn.com/#clubAmenitiesID">amenities</a>, they all offer a few that really help our members get the most out of every day. Each club has a swimming pool that is kept between 82&deg; and 84&deg;, which is perfect for either starting or ending the day with a relaxing swim. Looking to relax in a little heat? Try our spas and saunas, both are great options after a game or two of racquetball in one of our racquetball courts with your friends.
+				</p>
+			</div>
+			<div class="buttonDiv">
+				<form action="http://www.fitevomn.com/join-now">
+					<input class="joinButton" type="submit" value="Join Our Clubs!"/>
+				</form>
+			</div>
+			<h2 id="personalTrainingID">
+  				Personal Training
+			</h2>
+			<div class="subtitle">
+				Pursue your health and fitness goals with our nationally accredited personal trainers!
+			</div>
+			<div>
+				<ul>
+					<li>
+						By incorporating the four pillars of fitness (Nutrition, Exercise/Movement, Coaching/Accountability, and Recovery), our trainers will create personalized fitness plans to fit your specific abilities and goals to maximize results.
+					</li>
+					<li>
+						Each club offers exceptional small and large group training options, including: Kettlebells, indoor and outdoor bootcamps, TRX training, boxing, and MORE! See your specific club for information about their group training options.
+					</li>
+					<li>
+						We believe that a healthy lifestyle includes more than physical exercise; it is a workout strategy combined with nutritional guidance and health and fitness education. Each club offers informational and demonstrative seminars ranging from popular fitness programs like MyFitnessPal to how to use your favorite equipment like Kettlebells and Foam Rollers. See your specific club for information about their seminars.
+					</li>
+				</ul>
+			</div> <!-- personal training section -->
+			<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+			<h2 id="groupFitnessClassesID">Group Fitness Classes</h2>
+			<p class="greyHyperLinkCL">
+  				<a class="greyHyperLinkCL" href="http://www.fitevomn.com/group-fitness-class-list">Check out our complete list of group fitness classes!</a>
+			</p>
+			<p>
+				Exercising as a group offers numerous benefits, including: inspiring and motivational instructors, structured exercise, variety in exercising, social accountability from the friends you meet in class, and they are just plain fun!
+			</p>
+			<p>
+				Never tried a class? Or maybe you've never worked out? Our instructors know how to make their classes challenging for each member by offering modifications throughout the class. 
+			</p>
+			<p>
+				Our most popular group fitness classes include:
+			</p>
+			<ul>
+				<li>Aqua Exercises</li>
+				<li>Body Pump</li>
+				<li>Cardio</li>
+				<li>Insanity</li>
+				<li>Step</li>
+				<li>Yoga</li>
+				<li>Zumba</li>
+				<li>and More...</li>
+			</ul>
+			<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+			<h2 id="fitEvoCornerID">Fit Evo Corner</h2>
+			<div id="fitevocorner" class="container">
+				<div style="border:2px solid green" class="row">
+					<div  style="border:2px solid blue" class="col-sm-6">
+						<div id="currentBlog" class="container">
+							<div style="border:2px solid green"  class="row">
+								<div class="col">Healthy Eating is too Expensive!</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">some image here</div>
+								<div class="col-sm-6">
+									In our latest blog, Personal Trainer, Megan Leipholtz talks about methods she learned as a stay-at-home mother of 5 to eat healthy and stay on a budget!
+								</div>
+							</div>
+						</div><!--currentBlog-->
+					</div><!--col-sm-6-->
+					<div  style="border:2px solid red" class="col-sm-6">
+						<div id="currentBlog" class="container">
+							<div class="row">
+								<div class="col">Latest Blog Posts</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<ul>
+										<li>When will you HIIT the Gym?</li>
+										<li>First time in group fitness class?</li>
+										<li>Goal Setting</li>
+										<li>Why Boxing?</li>
+									</ul>
+								</div>
+							</div>
+						</div><!--currentBlog-->
+					</div><!--col-sm-6-->
+				</div>
+			</div><!-- fitevocorner-->
+			<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+			<h2 id="clubAmenitiesID">Club Amenities</h2>
+			<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+		</main><!-- hidden -->
 		<footer>
 
 		</footer>
@@ -148,9 +188,8 @@
 	
 		</script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    	$('#headerCarousel').carousel();
-    </script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<script src="js/script.js"></script>
+    	<!-- <script type="text/javascript" src="https://ar332.infusionsoft.com/app/form/iframe/b087a58b41ae71a32b1243a006f28d97"></script> -->
 	</body>
 </html>

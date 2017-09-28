@@ -7,9 +7,6 @@ var gulp = require('gulp'),
 
 
 var jsSources = [
-	'node_modules/jquery/dist/jquery.min.js',
-	'node_modules/bootstrap/dist/js/bootstrap.min.js',
-	'node_modules/tether/dist/js/tether.min.js',
 	'components/scripts/*.js'
 ];
 // var sassSources = [
@@ -18,7 +15,6 @@ var jsSources = [
 // ];
 
 var cssSources = [
-	'node_modules/bootstrap/dist/css/bootstrap.min.css',
 	'components/css/*.css'
 ];
 
@@ -32,7 +28,6 @@ var jsonSources = [
 gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
-		.pipe(browserify())
 		.pipe(gulp.dest('builds/development/js'))
 		.pipe(connect.reload())
 });
