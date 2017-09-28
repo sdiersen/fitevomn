@@ -3,37 +3,43 @@
 	<head>
 		<title>FitEvoMN</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<style>
+			header {
+				width:100vw;
+			}
+			#headerCarousel {
+				width:80%;
+				margin:0 auto;
+				border: 2px solid black;
+			}
+			.picStyle {
+				margin:0 auto;
+			}
+		</style>
 	</head>
 	<body>
-		<header style="width:100%;margin:0 auto">
+		<header>
 			<div id="headerCarousel" class="carousel slide" data-ride"carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#headerCarousel" data-slide-to="1"></li>
-					<li data-target="#headerCarousel" data-slide-to="2"></li>
-					<li data-target="#headerCarousel" data-slide-to="3"></li>
-					<li data-target="#headerCarousel" data-slide-to="4"></li>
-					<li data-target="#headerCarousel" data-slide-to="5"></li>
-				</ol>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="images/banner/personal-training-banner-3a.jpg" style="width:80%;" alt="">
+					<div class="item active">
+						<img src="images/banner/personal-training-banner-3a.jpg" class="picStyle img-circle"  alt="">
 					</div>
-					<div class="carousel-item">
-						<img src="images/banner/personal-training-banner-3b.jpg" style="width:80%;" alt="">
+					<div class="item">
+						<img src="images/banner/personal-training-banner-3b.jpg" class="picStyle img-circle" alt="">
 					</div>
-					<div class="carousel-item">
-						<img src="images/banner/group-fitness-banner-1a.jpg" style="width:80%;" alt="">
+					<div class="item">
+						<img src="images/banner/group-fitness-banner-1a.jpg" class="picStyle img-circle" alt="">
 					</div>
-					<div class="carousel-item">
-						<img src="images/banner/group-fitness-banner-1b.jpg" style="width:80%;" alt="">
+					<div class="item">
+						<img src="images/banner/group-fitness-banner-1b.jpg" class="picStyle img-circle" alt="">
 					</div>
-					<div class="carousel-item">
-						<img src="images/banner/group-fitness-banner-1c.jpg" style="width:80%;" alt="">
+					<div class="item">
+						<img src="images/banner/group-fitness-banner-1c.jpg" class="picStyle img-circle" alt="">
 					</div>
-					<div class="carousel-item">
-						<img src="images/banner/group-fitness-banner-1d.jpg" style="width:80%;" alt="">
+					<div class="item">
+						<img src="images/banner/group-fitness-banner-1d.jpg" class="picStyle img-circle" alt="">
 					</div>
 				</div><!--carousel-inner -->
 				<a class="left carousel-control" href="#headerCarousel" data-slide="prev">
@@ -47,7 +53,32 @@
 			</div><!-- carousel slide -->
 		</header>
 		<nav>
-
+			<div class="container">
+      <h2>Glyphicon Examples</h2>
+      <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>    
+      <p>Envelope icon as a link:
+        <a href="#">
+          <span class="glyphicon glyphicon-envelope"></span>
+        </a>
+      </p>
+      <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+      <p>Search icon on a button:
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </p>
+      <p>Search icon on a styled button:
+        <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </p>
+      <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
+      <p>Print icon on a styled link button:
+        <a href="#" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-print"></span> Print 
+        </a>
+      </p> 
+    </div>
 		</nav>
 		<div class="container">
   <h2>Carousel Example</h2>  
@@ -61,15 +92,15 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="item active">
         <img src="images/a.png" alt="Los Angeles" style="width:100%;">
       </div>
 
-      <div class="carousel-item">
+      <div class="item">
         <img src="images/b.png" alt="Chicago" style="width:100%;">
       </div>
     
-      <div class="carousel-item">
+      <div class="item">
         <img src="images/c.png" alt="New york" style="width:100%;">
       </div>
     </div>
@@ -110,11 +141,16 @@
 
 		</footer>
 		<!-- <script type="text/javascript" src="js/script.js"></script> -->
-		<script src="js/jquery.min.js"></script>
+		<!-- <script src="js/jquery.min.js"></script>
 		<script src="js/tether.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script> 
 	
-		</script>
+		</script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    	$('#headerCarousel').carousel();
+    </script>
 	</body>
 </html>
