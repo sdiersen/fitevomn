@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+body {
+	font-family:'Muli', sans-serif;
+	width:90vw;
+	margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	color: #FF6600;
+	font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+p {
+
+}
+
