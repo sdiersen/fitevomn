@@ -18,6 +18,9 @@ p {
 
 }
 
+#footerContainer {
+	max-width: inherit;
+}
 
 .greyText {
 	color: #a1a1a1;
@@ -190,12 +193,18 @@ a.greyHyperLinkCL:hover {
 
 .page {
 	font-size: 1.25em;
+	max-width:90vw;
+	margin:0 auto;
 }
 
 .smallTitle {
 	text-align: center;
 	font-size: 1.5em;
 	font-style: bold;
+}
+
+#fitevocorner {
+	max-width: inherit;
 }
 
 #fitevocorner div.smallTitle{
@@ -209,6 +218,10 @@ a.greyHyperLinkCL:hover {
 	overflow:hidden;
 }
 
+#ammenitiesContainer {
+	max-width: inherit;
+}
+
 .business-stuff {
 	text-align: center;
 	color: white;
@@ -218,14 +231,14 @@ a.greyHyperLinkCL:hover {
 	font-size:1.25em;
 }
 
-hr { 
+hr.roundedDown { 
   height: 30px; 
   border-style: solid; 
   border-color: #FF6600; 
   border-width: 2px 0 0 0; 
   border-radius: 20px; 
 } 
-hr:before { 
+hr.roundedDown:before { 
   display: block; 
   content: ""; 
   height: 30px; 
