@@ -1,6 +1,7 @@
 header {
 	background-color: black;
-	min-width:90vw;	
+	width: inherit;
+	margin-top: 50px;
 }
 
 #logoRow {

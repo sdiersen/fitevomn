@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 body {
 	font-family:'Muli', sans-serif;
-	width:90vw;
+	max-width: 1170px;
 	margin:0 auto;
 }
 
@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	color: #FF6600;
 	font-weight: bold;
+	margin:0;
 }
 
 h2 {
