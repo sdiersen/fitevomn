@@ -3,22 +3,47 @@ body {
 	font-family:'Muli', sans-serif;
 	max-width: 1170px;
 	margin:0 auto;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	color: #FF6600;
-	font-weight: bold;
-	margin:0;
+	font-weight: 700;
 }
 
-h2 {
-    font-size: 2.5em;
-}
-p {
+h1 { margin: 0 0 .5em 0; font-size: 2.8em; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; }
 
-}
+p { margin: 0 0 1em 0; }
 
 #footerContainer {
 	max-width: inherit;
 }
+
+.subtitleParagraph {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.25em;
+	margin: 0 1.25em 1.25em 1.25em;
+}
+
+
+/* BUTTONS */
+	.joinButton {
+		width:55%;
+		border-radius:.5em;
+		font-size:2em;
+		box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		background:#ff6600;
+		font-family:'Muli';
+	}
+
+	.joinButton:hover {
+		box-shadow:none;
+		cursor:pointer;
+	}

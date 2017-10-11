@@ -1,0 +1,55 @@
+.pageLink:link {
+	text-decoration:none;
+	color:#ff6600;
+}
+
+.pageLink:visited {
+  color:#ff6600;
+}
+
+.pageLink:hover {
+	background:#ff6600;
+	border-radius:.5em;
+	color:black;
+}
+
+.innerPageLink:link {
+	font-size:1em;
+	line-height:1.5em;
+	text-decoration:none;
+	color:#ff6600;
+}
+
+.innerPageLink:visited {
+	color:#ff6600;
+}
+
+.innerPageLink:hover {
+	background:#ff6600;
+	border-radius:.5em;
+	color:black;
+}
+
+p.greyHyperLinkCL {
+	width:100%;
+	font-size:1.5em;
+	line-height:1em;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+a.greyHyperLinkCL:link {
+	text-decoration: none;
+	color: #777777;
+}
+
+a.greyHyperLinkCL:visited {
+	color: #777777;
+}
+
+a.greyHyperLinkCL:hover {
+	background: #777777;
+	border-radius: .5em;
+	color: black;
+}

@@ -1,99 +1,6 @@
-#introParagraphID {
-	width: 100%;
-}
-  
-.pageLink:link {
-	text-decoration:none;
-	color:#ff6600;
-}
 
-.pageLink:visited {
-  color:#ff6600;
-}
 
-.pageLink:hover {
-	background:#ff6600;
-	border-radius:.5em;
-	color:black;
-}
 
-.innerPageLink:link {
-	font-size:1em;
-	line-height:1.5em;
-	text-decoration:none;
-	color:#ff6600;
-}
-
-.innerPageLink:visited {
-	color:#ff6600;
-}
-
-.innerPageLink:hover {
-	background:#ff6600;
-	border-radius:.5em;
-	color:black;
-}
-
-.subtitleParagraph {
-	font-size: 1.5em;
-	text-align: center;
-	font-weight: bold;
-	line-height: 1.25em;
-	margin: 1.25em;
-}
-
-div.buttonDiv {
-	width:100%;
-}
-
-form {
-	display:flex;
-	justify-content:center;
-}
-
-input.joinButton {
-	width:15em;
-	border-radius:.5em;
-	font-size:2em;
-	box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-	background:#ff6600;
-	font-family:'Muli';
-}
-
-input.joinButton:hover {
-	box-shadow:none;
-	cursor:pointer;
-}
-
-p.greyHyperLinkCL {
-	width:100%;
-	font-size:1.5em;
-	line-height:1em;
-	text-align:center;
-	padding:0;
-	margin:0;
-}
-
-a.greyHyperLinkCL:link {
-	text-decoration: none;
-	color: #777777;
-}
-
-a.greyHyperLinkCL:visited {
-	color: #777777;
-}
-
-a.greyHyperLinkCL:hover {
-	background: #777777;
-	border-radius: .5em;
-	color: black;
-}
-
-.page {
-	font-size: 1.25em;
-	max-width:1170px;
-	margin:0 auto;
-}
 
 .smallTitle {
 	text-align: center;
@@ -153,19 +60,24 @@ hr.roundedDown:before {
 }
 
 header {
-	height: 500px; background: black no-repeat fixed center top; position: relative;
+	height: 500px; 
+	background: black no-repeat fixed center top; 
+	position: relative;
+	margin:0 0 1em 0;
 }
 
 header > div {
 	width:100%;
 	text-align: center;
 }
-
+header .carouselContainer {
+	max-width:640px;
+	margin:0 auto;
+}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
 	margin: auto;
 }
-
 
 #logoImage {
 	max-height:120px;
@@ -176,37 +88,100 @@ header > div {
   
 }
 
-.missionStatement {
-	display: none;
-}
 
-.specialAnnouncements {
-	display: none;
-}
 
-.aboutUs {
-	display: none;
-}
 
-.joinUs {
-	display: none;
-}
+/* ALL SECTION AREA */
+	section::after { content:''; display:block; clear:both; }
 
-.personalTraining {
-	display: none;
-}
+/* MISSION STATEMENT SECTIONS */
+	section.missionStatement {
+		display: none;
+	}
 
-.groupFitness {
-	display: none;
-}
+/* SPECIAL ANNOUNCEMENTS SECTION */
+	.specialAnnouncements {
+		display: none;
+	}
 
-.redZone {
-	display: none;
-}
+/* ABOUT US SECTION */
+	section.aboutUs {
+		display: none;
+		margin: 20px 10px 30px 10px;
+		padding: 0;
+	}
+	section.aboutUs > p {
+		text-align: center;
+		font-style: italic;
+	}
+	section.aboutUs aside {
+		width: 33%;
+		float: left;
+		text-align: center;
+	}
 
-.communications {
-	display: none;
-}
+	section.aboutUs .content {
+		margin: 15px;
+		background: no-repeat center top;
+		background-size: 75px 75px;
+		padding-top: 85px;
+	}
+
+	section.aboutUs .content.personal-training {
+		background-image: url(/images/svg/personal-training.svg);
+	}
+	section.aboutUs .content.group-fitness {
+		background-image: url(/images/svg/group-fitness.svg);
+	}
+	section.aboutUs .content.amenities {
+		background-image: url(/images/svg/amenities.svg);
+	}
+
+/* JOIN US SECTION */
+	section.joinUs {
+		display:none;
+		text-align: center;
+	}
+
+/* POSSIBLY DEFUNCT SECTIONS */
+	.personalTraining {
+		display: none;
+	}
+
+	.groupFitness {
+		display: none;
+	}
+
+	.redZone {
+		display: none;
+	}
+/* END OF DEFUNCT SECTIONS*/
+
+/* COMMUNICATIONS SECTION */
+	section.communications {
+		margin-top: 20px;
+	}
+
+	section.communications aside {
+		float: left;
+	}
+
+	section.communications aside:nth-child(1) {
+		width:60%;
+	}
+
+	section.communications aside:nth-child(2) {
+		width:40%;
+	}
+	section.communications aside div.blog {
+		width: 50%;
+		float: left;
+	}
+	section.communications aside div.currentBlog {
+		text-align: center;
+		padding:0 5px 0 10px;
+	}
+	
 
 .locations {
 	display: none;

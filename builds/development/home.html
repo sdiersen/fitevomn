@@ -8,13 +8,13 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div id="page">
+		<div>
 			<header>
 				<div>
 					<img id="logoImage" src="images/logos/fit_easy_logo.png" />
 				</div>
 				<div class="carouselContainer">
-					<div id="headerCarousel" class="carousel " data-ride="carousel">
+					<div id="headerCarousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div  class="item active">
 								<a href="#">
@@ -43,8 +43,8 @@
 					</div><!-- carousel slide -->
 				</div>
 			</header>
-			<main id="pageContent">
-				<section class="missionStatment">
+			<main>
+				<section class="missionStatement">
 					<h1 id="aboutUsID">
 						Welcome to FitEvoMN
 					</h1>
@@ -63,30 +63,41 @@
 				<hr class="roundedDown">
 
 				<section class="aboutUs">
-					<div id="introParagraphID" class="page">
-						<p>
-							Fitness Evolution believes that you should be able to improve your health without breaking the bank. We love to provide our members with a high-quality club experience while keeping your membership fee as low as possible.
-						</p>
-						<p>
-							We have built a meaningful community so that all of our members can feel comfortable at all times. Our staff and highly educated <a class="pageLink" href="http://www.fitevomn.com/#personalTrainingID">personal trainers</a> are always willing to provide a helping hand so that you can achieve your fitness goals. As soon as you step foot in our club, we want you to feel like it’s a home away from home.
-						</p>
-						<p>
-							Our clubs in Buffalo, Monticello, and Zimmerman offer many forms of exercise to fit your style or your particular mood for the day. You can get a great workout using our cardio equipment or by lifting free weights in our weight rooms. Want to mix it up a bit? Try one of our <a class="pageLink" href="http://www.fitevomn.com/#groupFitnessClassesID">group fitness classes</a> such as Zumba&reg;, Les Mills Body Pump&reg;, or Flex or take one of our Yoga classes to relieve the day's stress.
-						</p>
-						<p>
-							While each of our three clubs offers slightly different <a class="pageLink" href="http://wwww.fitevomn.com/#clubAmenitiesID">amenities</a>, they all offer a few that really help our members get the most out of every day. Each club has a swimming pool that is kept between 82&deg; and 84&deg;, which is perfect for either starting or ending the day with a relaxing swim. Looking to relax in a little heat? Try our spas and saunas, both are great options after a game or two of racquetball in one of our racquetball courts with your friends.
-						</p>
-					</div>
+					<p>
+						Fitness Evolution believes that you should be able to improve your health without breaking the bank. We love to provide our members with a high-quality club experience while keeping your membership fee as low as possible.
+					</p>
+					<aside>
+						<div class="content personal-training">
+							<h2><a href="#"><span class="right">Personal Training</span></a></h2>
+							<p>
+								We have built a meaningful community so that all of our members can feel comfortable at all times. Our staff and highly educated <a class="pageLink" href="http://www.fitevomn.com/#personalTrainingID">personal trainers</a> are always willing to provide a helping hand so that you can achieve your fitness goals. As soon as you step foot in our club, we want you to feel like it’s a home away from home.
+							</p>
+						</div>
+					</aside>
+					<aside>
+						<div class="content group-fitness">
+							<h2><a href="#">Group Fitness</a></h2>
+							<p>
+								Our clubs in Buffalo, Monticello, and Zimmerman offer many forms of exercise to fit your style or your particular mood for the day. You can get a great workout using our cardio equipment or by lifting free weights in our weight rooms. Want to mix it up a bit? Try one of our <a class="pageLink" href="http://www.fitevomn.com/#groupFitnessClassesID">group fitness classes</a> such as Zumba&reg;, Les Mills Body Pump&reg;, or Flex or take one of our Yoga classes to relieve the day's stress.
+							</p>
+						</div>
+					</aside>
+					<aside>
+						<div class="content amenities">
+							<h2><a href="#">Amenities</a></h2>
+							<p>
+								While each of our three clubs offers slightly different <a class="pageLink" href="http://wwww.fitevomn.com/#clubAmenitiesID">amenities</a>, they all offer a few that really help our members get the most out of every day. Each club has a swimming pool that is kept between 82&deg; and 84&deg;, which is perfect for either starting or ending the day with a relaxing swim. Looking to relax in a little heat? Try our spas and saunas, both are great options after a game or two of racquetball in one of our racquetball courts with your friends.
+							</p>
+						</div>
+					</aside>
 				</section>
 
 				<hr class="roundedDown">
 				
 				<section class="joinUs">
-					<div class="buttonDiv">
-						<form action="http://www.fitevomn.com/join-now">
-							<input class="joinButton" type="submit" value="Join Our Clubs!"/>
-						</form>
-					</div>
+					<form action="http://www.fitevomn.com/join-now">
+						<input class="joinButton" type="submit" value="Join Our Clubs!"/>
+					</form>
 				</section>
 				
 				<hr class="roundedDown">
@@ -159,42 +170,44 @@
 				<hr class="roundedDown">
 
 				<section class="communications">
-					<aside>
+					<aside>						
 						<h2>Fit Evo Corner</h2>
-						<div class="currentBlog">
-							<h3>Healthy Eating is too Expensive!</h3>
-							<img class="img-fluid img-thumbnail" src="images/blogs/Meghan-blog-10-1-17-1.jpg"/>
-							<p>In our latest blog, Personal Trainer, Megan Leipholtz talks about methods she learned as a stay-at-home mother of 5 to eat healthy and stay on a budget!</p>
-						</div>
-						<div class="oldBlogs">
-							<ul>
-								<li>When will you HIIT the Gym?</li>
+						<div class="blogContainer">
+							<div class="blog currentBlog">
+								<h3>Healthy Eating is too Expensive!</h3>
+								<img class="img-fluid img-thumbnail" src="images/blogs/Meghan-blog-10-1-17-1.jpg"/>
+								<p>In our latest blog, Personal Trainer, Megan Leipholtz talks about methods she learned as a stay-at-home mother of 5 to eat healthy and stay on a budget!</p>
+							</div>
+							<div class="blog oldBlogs">
 								<ul>
-									<li>Christina</li>
-									<li>July 1<sup>st</sup>, 2017</li>
-									<li>10 comments</li>
+									<li>When will you HIIT the Gym?</li>
+									<ul>
+										<li>Christina</li>
+										<li>July 1<sup>st</sup>, 2017</li>
+										<li>10 comments</li>
+									</ul>
+									<li>First time in group fitness class?</li>
+									<ul>
+										<li>...</li>
+									</ul>
+									<li>Goal Setting</li>
+									<ul>
+										<li>...</li>
+									</ul>
+									<li>Why Boxing?</li>
+									<ul>
+										<li>...</li>
+									</ul>
+									<li>Small Changes Lead to Big Results</li>
+									<ul>
+										<li>...</li>
+									</ul>
 								</ul>
-								<li>First time in group fitness class?</li>
-								<ul>
-									<li>...</li>
-								</ul>
-								<li>Goal Setting</li>
-								<ul>
-									<li>...</li>
-								</ul>
-								<li>Why Boxing?</li>
-								<ul>
-									<li>...</li>
-								</ul>
-								<li>Small Changes Lead to Big Results</li>
-								<ul>
-									<li>...</li>
-								</ul>
-							</ul>
+							</div>
 						</div>
 					</aside>
 					<aside>
-						<h3>Sign Up for our Newsletter</h3>
+						<h2>Sign Up for our Newsletter</h2>
 						<script type="text/javascript" src="https://ar332.infusionsoft.com/app/form/iframe/b087a58b41ae71a32b1243a006f28d97"></script>
 					</aside>
 					<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>

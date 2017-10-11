@@ -1,6 +1,128 @@
 @media screen and (max-width:1169px) {
 	
-	header .carouselContainer {
-		padding:0 100px;
+	h1 { font-size: 2.4em; }
+
+	.subtitleParagraph {
+		font-size:1.3em;
+		line-height: 1.2em;
 	}
+
+	/* JOIN US */
+		section.joinUs form input.joinButton {
+			font-size: 1.8em;
+		}
+
+}
+
+@media screen and (max-width:1100px) {
+	/* COMMUNICATIONS */
+		
+		section.communications aside:nth-child(1) {
+			width:100%;
+		}		
+		section.communications aside:nth-child(2) {
+			width:100%;
+		}		
+		
+}
+
+@media screen and (max-width:874px) {
+
+	/* ABOUT US */
+		section.aboutUs aside {
+			width: 100%;
+			float: none;
+		}
+		section.aboutUs aside div.content {
+			margin: 8px 20px 8px 0;
+			padding: 5px 0px 10px 100px;
+			/*background-size: 50px 50px;*/
+			background-position: 15px 50px;
+		}
+
+	/* COMMUNICATIONS */
+
+}
+
+@media screen and (max-width:640px) {
+
+	h1 { font-size: 2.2em; }
+
+	.subtitleParagraph {
+		font-size:1.2em;
+		line-height: 1.1em;
+	}
+	header {
+		height:300px;
+	}
+	#logoImage {
+		max-height: 72px;
+		margin: 6px auto;
+	}
+	header .carouselContainer {
+		max-width:384px;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		max-height: 216px;
+	}
+
+	/* ABOUT US */
+		section.aboutUs aside div.content {
+				padding: 5px 0px 10px 0px;
+			}
+		section.aboutUs .content.personal-training {
+			background-image: none;
+		}
+		section.aboutUs .content.group-fitness {
+			background-image: none;
+		}
+		section.aboutUs .content.amenities {
+			background-image: none;
+		}
+
+	/* JOIN US */
+		section.joinUs form input.joinButton {
+			font-size: 1.3em;
+		}
+
+	/* COMMUNICATIONS */
+		section.communications aside div.blog {
+			border: 1px solid green;
+			width: 100%;
+			float:none;
+		}
+		section.communications aside div.blog::after {
+			content:'';
+			display:block;
+			clear:both;
+		}
+}
+
+@media screen and (max-width:385px) {
+
+	h1 { font-size: 1.8em; }
+	h2 { font-size: 1.4em; }
+	h3 { font-size: 1.1em; }
+
+	.subtitleParagraph {
+		font-size: 1.1em;
+		line-height: 1.05em;
+	}
+
+	header { 
+		height: 250px; 
+	}
+	header .carouselContainer {
+		max-width:293px;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		max-height: 165px;
+	}
+
+	/* JOIN US */
+		section.joinUs form input.joinButton {
+			font-size: 1.1em;
+		}
 }
