@@ -6,87 +6,30 @@
 		<!-- <link rel="stylesheet" href="css/style.css"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<style>
-			body {
-				height:100vh;
-				width:100vw;
-				background-color: black;
-			}
-		</style>
 	</head>
 	<body>
-		<!-- <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#">Navbar</a>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="nav-item">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="buffalo/index.html">Buffalo</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="monticello/index.html">Monticello</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="zimmerman/index.html">Zimmerman</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="fitevocorner/index.html" id="navbarDrowpdownMenuLink">FitEvo Corner</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">When will you HIIT the Gym?</a>
-							<a class="dropdown-item" href="#">First time in group fitness class?</a>
-							<a class="dropdown-item" href="#">Goal Setting</a>
-							<a class="dropdown-item" href="#">Why Boxing?</a>
-							<a class="dropdown-item" href="#">Small changes Lead to Big Results</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav> -->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#slideshow"><h1>FitEvoMN</h1></a>
-					</div><!-- navbar-header -->
-					<div class="collapse navbar-collapse" id="collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item active"><a href="#">Home</a></li>
-							<li class="nav-item" ><a href="buffalo/index.html">Buffalo</a></li>
-							<li class="nav-item" ><a href="monticello/index.html">Monticello</a></li>
-							<li class="nav-item" ><a href="zimmerman/index.html">Zimmerman</a></li>
-						</ul>
-					</div><!-- navbar collapse -->
-				</div><!-- navbar-container -->
-			</nav>
-		<header class="container">
-			
-			<div id="logoRow" class="row">
-				<div id="topLogo" class="col-12">
-					<img id="topLogoPic" src="images/logos/fit_easy_logo.png" />
-				</div> <!-- col-12 -->
-			</div><!-- row -->
-			<div id="headerRow" class="row">
-				<div id="carouselWrapper" class="col-sm-8">
-					<div id="headerCarousel" class="carousel slide" data-ride"carousel">
+		<div id="page">
+			<header>
+				<div>
+					<img id="logoImage" src="images/logos/fit_easy_logo.png" />
+				</div>
+				<div class="carouselContainer">
+					<div id="headerCarousel" class="carousel " data-ride="carousel">
 						<div class="carousel-inner">
 							<div  class="item active">
-								<img data-club-location="location-buffalo" id="name-of-event" src="images/banner/buffalo-banner.png" alt="">
+								<a href="#">
+									<img data-club-location="location-buffalo" id="name-of-event" src="images/banner/buffalo-banner.png" alt="">
+								</a>
 							</div>
 							<div class="item">
-								<img data-club-location="location-monticello" id="monticellos-event" src="images/banner/monticello-banner.png" alt="">
+								<a href="#">
+									<img data-club-location="location-monticello" id="monticellos-event" src="images/banner/monticello-banner.png" alt="">
+								</a>
 							</div>
 							<div class="item">
-								<img data-club-location="location-zimmerman" id="whats-up-zimmerman" src="images/banner/zimmerman-banner.png" alt="">
+								<a href="#">
+									<img data-club-location="location-zimmerman" id="whats-up-zimmerman" src="images/banner/zimmerman-banner.png" alt="">
+								</a>
 							</div>
 						</div><!--carousel-inner -->
 						<a class="left carousel-control" href="#headerCarousel" data-slide="prev">
@@ -98,40 +41,305 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div><!-- carousel slide -->
-				</div><!-- carouselWrapper -->
-				<div id="headerLogo" class="col-sm-4">
-					<p class="headerTag">FitEvoMN </p><br/>
-					<ul>
-						<li> 
-							<a href="#"> <span class="headerTag">Buffalo</span></a>
-							<ul id="location-buffalo">
-								<li><span class="headerTag">name-of-event</span></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"> <span class="headerTag">Monticello</span> </a>
-							<ul id="location-monticello">
-								<li><span class="headerTag"></span></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#"> <span class="headerTag">Zimmerman</span></a>
-							<ul id="location-zimmerman">
-								<li><span class="headerTag"></span></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--headerLogo-->
-			</div> <!-- row -->
-			<div class="row">
-				<div class="col">
-					
 				</div>
-			</div>
-		</header>
+			</header>
+			<main id="pageContent">
+				<section class="missionStatment">
+					<h1 id="aboutUsID">
+						Welcome to FitEvoMN
+					</h1>
+					
+					<div id="titleParagraph" class="greyText subtitleParagraph">
+						More Than a Club, We Are a Community. We Pride Ourselves on Customer Service, Cleanliness, and Friendliness to Give You the Best Experience Possible. It’s What Sets Us Apart From the Rest!
+					</div>
+				</section>
+				
+				<hr class="roundedDown">
+				
+				<section class="specialAnnouncements">
+
+				</section>
+				
+				<hr class="roundedDown">
+
+				<section class="aboutUs">
+					<div id="introParagraphID" class="page">
+						<p>
+							Fitness Evolution believes that you should be able to improve your health without breaking the bank. We love to provide our members with a high-quality club experience while keeping your membership fee as low as possible.
+						</p>
+						<p>
+							We have built a meaningful community so that all of our members can feel comfortable at all times. Our staff and highly educated <a class="pageLink" href="http://www.fitevomn.com/#personalTrainingID">personal trainers</a> are always willing to provide a helping hand so that you can achieve your fitness goals. As soon as you step foot in our club, we want you to feel like it’s a home away from home.
+						</p>
+						<p>
+							Our clubs in Buffalo, Monticello, and Zimmerman offer many forms of exercise to fit your style or your particular mood for the day. You can get a great workout using our cardio equipment or by lifting free weights in our weight rooms. Want to mix it up a bit? Try one of our <a class="pageLink" href="http://www.fitevomn.com/#groupFitnessClassesID">group fitness classes</a> such as Zumba&reg;, Les Mills Body Pump&reg;, or Flex or take one of our Yoga classes to relieve the day's stress.
+						</p>
+						<p>
+							While each of our three clubs offers slightly different <a class="pageLink" href="http://wwww.fitevomn.com/#clubAmenitiesID">amenities</a>, they all offer a few that really help our members get the most out of every day. Each club has a swimming pool that is kept between 82&deg; and 84&deg;, which is perfect for either starting or ending the day with a relaxing swim. Looking to relax in a little heat? Try our spas and saunas, both are great options after a game or two of racquetball in one of our racquetball courts with your friends.
+						</p>
+					</div>
+				</section>
+
+				<hr class="roundedDown">
+				
+				<section class="joinUs">
+					<div class="buttonDiv">
+						<form action="http://www.fitevomn.com/join-now">
+							<input class="joinButton" type="submit" value="Join Our Clubs!"/>
+						</form>
+					</div>
+				</section>
+				
+				<hr class="roundedDown">
+
+				<section class="personalTraining">
+					<div id="personalTrainingID" class="page">
+						<h2>Personal Training</h2>
+						<div class="subtitleParagraph greyText">
+							Pursue your health and fitness goals with our nationally accredited personal trainers!
+						</div>
+						<ul>
+							<li>
+								By incorporating the four pillars of fitness (Nutrition, Exercise/Movement, Coaching/Accountability, and Recovery), our trainers will create personalized fitness plans to fit your specific abilities and goals to maximize results.
+							</li>
+							<li>
+								Each club offers exceptional small and large group training options, including: Kettlebells, indoor and outdoor bootcamps, TRX training, boxing, and MORE! See your specific club for information about their group training options.
+							</li>
+							<li>
+								We believe that a healthy lifestyle includes more than physical exercise; it is a workout strategy combined with nutritional guidance and health and fitness education. Each club offers informational and demonstrative seminars ranging from popular fitness programs like MyFitnessPal to how to use your favorite equipment like Kettlebells and Foam Rollers. See your specific club for information about their seminars.
+							</li>
+						</ul>	
+						<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+					</div> <!-- personal training section -->
+				</section>			
+
+				<hr class="roundedDown">
+
+				<section class="groupFitness">
+					<div id="groupFitnessClassesID" class="page">
+						<h2>Group Fitness Classes</h2>
+						<p class="greyHyperLinkCL">
+			  				<a class="greyHyperLinkCL" href="http://www.fitevomn.com/group-fitness-class-list">Check out our complete list of group fitness classes!</a>
+						</p>
+						<p>
+							Exercising as a group offers numerous benefits, including: inspiring and motivational instructors, structured exercise, variety in exercising, social accountability from the friends you meet in class, and they are just plain fun!
+						</p>
+						<p>
+							Never tried a class? Or maybe you've never worked out? Our instructors know how to make their classes challenging for each member by offering modifications throughout the class. 
+						</p>
+						<p>
+							Our most popular group fitness classes include:
+						</p>
+						<ul>
+							<li>Aqua Exercises</li>
+							<li>Body Pump</li>
+							<li>Cardio</li>
+							<li>Insanity</li>
+							<li>Step</li>
+							<li>Yoga</li>
+							<li>Zumba</li>
+							<li>and More...</li>
+						</ul>
+						<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+					</div> <!--group fitness classes section -->
+				</section>
+
+				<hr class="roundedDown">
+
+				<section class="redZone">
+					<h2>RedZone Fitness</h2>
+					<h3>The RED Zone is an all-encompassing, results-driven fitness program that fits the needs of all our members – regardless of activity level.</h3>
+					<p>
+						The RED Zone fitness and performance training center is a 5500-square foot facility designed to house an all-encompassing fitness program for individuals of ALL fitness levels.
+					</p>
+					<p>
+						We specializes in functional fitness to show dramatic changes in weight loss, improved strength, flexibility, mobility, physical performance and endurance through functional strength training, and intense interval training programming. The RED Zone gym implements climbing ropes, battle ropes, Olympic barbells with bumper plates, kettle bells, dumb bells, cables, sleds, medicine balls, sand bags, tires, sledge hammers, TRX and Jungle Gym straps, and a 25-yard turf area to perform movement and agility drills that all combine to give a workout unlike any in town. We coach members of ALL fitness levels while striving to instill a sense of camaraderie along with leading a healthy lifestyle. This social aspect is not something that is typical at a regular functional training gym.
+					</p>
+				</section>
+
+				<hr class="roundedDown">
+
+				<section class="communications">
+					<aside>
+						<h2>Fit Evo Corner</h2>
+						<div class="currentBlog">
+							<h3>Healthy Eating is too Expensive!</h3>
+							<img class="img-fluid img-thumbnail" src="images/blogs/Meghan-blog-10-1-17-1.jpg"/>
+							<p>In our latest blog, Personal Trainer, Megan Leipholtz talks about methods she learned as a stay-at-home mother of 5 to eat healthy and stay on a budget!</p>
+						</div>
+						<div class="oldBlogs">
+							<ul>
+								<li>When will you HIIT the Gym?</li>
+								<ul>
+									<li>Christina</li>
+									<li>July 1<sup>st</sup>, 2017</li>
+									<li>10 comments</li>
+								</ul>
+								<li>First time in group fitness class?</li>
+								<ul>
+									<li>...</li>
+								</ul>
+								<li>Goal Setting</li>
+								<ul>
+									<li>...</li>
+								</ul>
+								<li>Why Boxing?</li>
+								<ul>
+									<li>...</li>
+								</ul>
+								<li>Small Changes Lead to Big Results</li>
+								<ul>
+									<li>...</li>
+								</ul>
+							</ul>
+						</div>
+					</aside>
+					<aside>
+						<h3>Sign Up for our Newsletter</h3>
+						<script type="text/javascript" src="https://ar332.infusionsoft.com/app/form/iframe/b087a58b41ae71a32b1243a006f28d97"></script>
+					</aside>
+					<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+				</section>		
+							
+				<hr class="roundedDown">
+
+				<section class="locations">
+					<aside>
+						<h2>Buffalo</h2>
+					</aside>
+					<aside>
+						<h2>Monticello</h2>
+					</aside>
+					<aside>
+						<h2>Zimmerman</h2>
+					</aside>
+					<a class="innerPageLink" href="http://www.fitevomn.com/#aboutUsID">back to top</a>
+				</section>
+				
+				<hr class="roundedDown">
+				
+			</main><!-- hidden -->
+
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Home</a>
+						<ul>
+							<li><a href="#">Group Fitness List</a></li>
+							<li><a href="#">Kid's Clubs</a></li>
+							<li><a href="#">Affiliations</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Buffalo</a>
+						<ul>
+							<li><a href="#">Memberships</a></li>
+							<li><a href="#">Group Fitness</a></li>
+							<li><a href="#">RedZone</a></li>
+							<li><a href="#">Swim Lessons</a></li>
+							<li><a href="#">12 Week Transformation</a></li>
+							<li><a href="#">Freezer Meals</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Monticello</a>
+						<ul>
+							<li><a href="#">Memberships</a></li>
+							<li><a href="#">Group Fitness</a></li>
+							<li><a href="#">Yoga</a></li>
+							<li>
+								<a href="#">Boxing Club</a>
+								<ul>
+									<li><a href="#">About Boxing Club</a></li>
+									<li><a href="#">Rock Steady Boxing</a></li>
+									<li><a href="#">Youth Boxing Club</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Swim Lessons</a></li>	
+						</ul>
+					</li>	
+					<li>
+						<a href="#">Zimmerman</a>
+						<ul>
+							<li><a href="#">Memberships</a></li>
+							<li><a href="#">Group Fitness</a></li>
+							<li><a href="#">RedZone</a></li>
+							<li><a href="#">Swim Lessons</a></li>
+							<li><a href="#">12 Week Challenge</a></li>	
+						</ul>
+					</li>
+					<li>
+						<a href="#">Fit Evo Corner</a>
+				 	</li>					
+				</ul>
+			</nav>
+
+			<footer style="background-color: black" class="page">
+				<div id="footerContainer" class="container">
+					<div class="row">
+						<div class="col">
+							<h2>To be the best part of our members' day, everyday!</h2>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-sm-4">
+							<button class="btn btn-warning">Job Opportunities</button>
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-warning">Request More Information</button>
+						</div>
+						<div class="col-sm-4">
+							<button class="btn btn-warning">Website Services</button>
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="business-stuff col-xs-4">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								<span itemprop="name" class="business-name">FE - Buffalo</span>
+								<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">101 14<sup>th</sup> Street NE</span><br/>
+									<span itemprop="addressLocality">Buffalo</span>,
+									<span itemprop="addressRegion">MN</span>
+								</div>
+								<span itemprop="telephone">763-682-4300</span>
+							</div>
+						</div>
+						<div class="business-stuff col-xs-4">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								<span itemprop="name" class="business-name">FE - Monticello</span>
+								<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">133 Sandberg Road</span><br/>
+									<span itemprop="addressLocality">Monticello</span>,
+									<span itemprop="addressRegion">MN</span>
+								</div>
+								<span itemprop="telephone">763-295-3002</span>
+							</div>
+						</div>
+						<div class="business-stuff col-xs-4">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								<span itemprop="name" class="business-name">FE - Zimmerman</span>
+								<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">26275 Fremont Drive</span><br/>
+									<span itemprop="addressLocality">Zimmerman</span>,
+									<span itemprop="addressRegion">MN</span>
+								</div>
+								<span itemprop="telephone">763-856-4200</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h2>&copy;Fitness Evolution MN 2016</h2>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div><!-- the end of the id="page" div -->
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     	<script src="js/script.js"></script>
+    	
     	<!-- <script type="text/javascript" src="https://ar332.infusionsoft.com/app/form/iframe/b087a58b41ae71a32b1243a006f28d97"></script> -->
     	<div id="fb-root"></div>
 		<script>(function(d, s, id) {

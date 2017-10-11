@@ -36,72 +36,6 @@ p {
 .orangeBackground {
 	background-color: #FF6600;
 }
-header {
-	background-color: black;
-	width: inherit;
-	margin-top: 50px;
-}
-
-#logoRow {
-	padding-top: 1em;
-	padding-bottom: 1.5em;
-}
-
-#topLogo {
-	text-align: center;
-}
-
-#topLogoPic {
-	width: 60%;
-	min-width:300px;
-}
-
-#headerRow {
-	padding: 20px;
-	border-top:4px solid #FF6600;
-}
-
-#headerMenu {
-	height: 100%;
-}
-
-#headerCarousel {
-	height: 100%;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-	margin: auto;
-}
-
-#headerLogo {
-	height:100%;
-}
-
-.headerTag {
-	color:#FF6600;
-	font-style: italic;
-	font-size: 1.5em;
-}
-
-p.headerTag {
-	text-align:center;
-}
-
-#headerLogo ul {
-	padding:0;
-	list-style: none;
-}
-
-#headerLogo ul li {
-	list-style: none;
-	text-align:left;
-}
-
-#headerLogo ul li ul {
-	padding-left:10px;
-}
-
 #introParagraphID {
 	width: 100%;
 }
@@ -249,6 +183,89 @@ hr.roundedDown:before {
   border-color: #FF6600; 
   border-width: 0 0 1px 0; 
   border-radius: 20px; 
+}
+
+/* ID Page top level content holder */
+#page {
+
+}
+
+header {
+	height: 500px; background: black no-repeat fixed center top; position: relative;
+}
+
+header > div {
+	width:100%;
+	text-align: center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	margin: auto;
+}
+
+
+#logoImage {
+	max-height:120px;
+	margin: 10px auto;
+}
+
+#pageContent {
+  
+}
+
+.missionStatement {
+	display: none;
+}
+
+.specialAnnouncements {
+	display: none;
+}
+
+.aboutUs {
+	display: none;
+}
+
+.joinUs {
+	display: none;
+}
+
+.personalTraining {
+	display: none;
+}
+
+.groupFitness {
+	display: none;
+}
+
+.redZone {
+	display: none;
+}
+
+.communications {
+	display: none;
+}
+
+.locations {
+	display: none;
+}
+
+nav {
+	display: none;
+}
+
+footer {
+	display: none;
+}
+
+hr {
+	display: none;
+}
+@media screen and (max-width:1169px) {
+	
+	header .carouselContainer {
+		padding:0 100px;
+	}
 }
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 
