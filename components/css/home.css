@@ -1,41 +1,4 @@
 
-
-
-
-.smallTitle {
-	text-align: center;
-	font-size: 1.5em;
-	font-style: bold;
-}
-
-#fitevocorner {
-	max-width: inherit;
-}
-
-#fitevocorner div.smallTitle{
-	border-bottom:2px solid #FF6600;
-	background-color: bisque;
-}
-
-#currentBlog, #recentBlogs {
-	border:2px solid #FF6600;
-	height:350px;
-	overflow:hidden;
-}
-
-#ammenitiesContainer {
-	max-width: inherit;
-}
-
-.business-stuff {
-	text-align: center;
-	color: white;
-}
-
-.business-name {
-	font-size:1.25em;
-}
-
 hr.roundedDown { 
   height: 30px; 
   border-style: solid; 
@@ -58,41 +21,38 @@ hr.roundedDown:before {
 #page {
 
 }
-
-header {
-	height: 500px; 
-	background: black no-repeat fixed center top; 
-	position: relative;
-	margin:0 0 1em 0;
-}
-
-header > div {
-	width:100%;
-	text-align: center;
-}
-header .carouselContainer {
-	max-width:640px;
-	margin:0 auto;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-	margin: auto;
-}
-
-#logoImage {
-	max-height:120px;
-	margin: 10px auto;
-}
-
 #pageContent {
   
 }
 
-
-
-
 /* ALL SECTION AREA */
 	section::after { content:''; display:block; clear:both; }
+
+/* HEADER SECTION */
+	header {
+		height: 500px; 
+		background: black no-repeat fixed center top; 
+		position: relative;
+		margin:0 0 1em 0;
+	}
+
+	header > div {
+		width:100%;
+		text-align: center;
+	}
+	header .carouselContainer {
+		max-width:640px;
+		margin:0 auto;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		margin: auto;
+	}
+
+	#logoImage {
+		max-height:120px;
+		margin: 10px auto;
+	}
 
 /* MISSION STATEMENT SECTIONS */
 	section.missionStatement {
@@ -106,7 +66,7 @@ header .carouselContainer {
 
 /* ABOUT US SECTION */
 	section.aboutUs {
-		display: none;
+		display:none;
 		margin: 20px 10px 30px 10px;
 		padding: 0;
 	}
@@ -159,6 +119,7 @@ header .carouselContainer {
 
 /* COMMUNICATIONS SECTION */
 	section.communications {
+		display: none;
 		margin-top: 20px;
 	}
 
@@ -181,11 +142,54 @@ header .carouselContainer {
 		text-align: center;
 		padding:0 5px 0 10px;
 	}
-	
 
-.locations {
-	display: none;
-}
+/* LOCATIONS AREA */
+	section.locations {
+		margin: 20px 0;
+		padding: 0;
+	}
+
+	section.locations aside {
+		float: left;
+		padding: 0 10px 0 10px;
+	}
+
+	section.locations aside:nth-child(1),
+	section.locations aside:nth-child(2) {
+		width:33%;
+	}
+	section.locations aside:nth-child(3) {
+		width:34%;
+	}
+
+	section.locations aside div.locationsGroup {
+		padding:0 8px;
+	}
+	section.locations aside div.locationsInfo {
+		width: 50%;
+		float: left;
+		font-size: .8em;
+	}
+
+	section.locations aside h2 {
+		font-size:1.3em;
+	}
+
+	section.locations aside div.locationsInfo:nth-child(odd) {
+		text-align: right;
+	}
+	section.locations aside div.locationsInfo::after {
+		content:'';
+		display:block;
+		clear:both;
+	}
+
+	section.locations aside div.locationFrame {
+		text-align: center;
+	}
+	section.locations aside div.locationFrame iframe {
+		margin:10px 0;
+	}
 
 nav {
 	display: none;

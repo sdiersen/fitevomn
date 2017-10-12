@@ -1,11 +1,12 @@
 @media screen and (max-width:1169px) {
 	
-	h1 { font-size: 2.4em; }
+	/* TEXT AREA */
+		h1 { font-size: 2.4em; }
 
-	.subtitleParagraph {
-		font-size:1.3em;
-		line-height: 1.2em;
-	}
+		.subtitleParagraph {
+			font-size:1.3em;
+			line-height: 1.2em;
+		}
 
 	/* JOIN US */
 		section.joinUs form input.joinButton {
@@ -15,8 +16,8 @@
 }
 
 @media screen and (max-width:1100px) {
+	
 	/* COMMUNICATIONS */
-		
 		section.communications aside:nth-child(1) {
 			width:100%;
 		}		
@@ -24,6 +25,31 @@
 			width:100%;
 		}		
 		
+}
+
+@media screen and (max-width:890px) {
+	/* LOCATIONS */
+		section.locations aside h2 {
+			font-size: 1.2em;
+		}
+		section.locations aside {
+			width:100%;
+			clear:both;
+			margin: 0 auto;
+		}
+		section.locations aside:nth-child(1),
+		section.locations aside:nth-child(2),
+		section.locations aside:nth-child(3) {
+			width:100%;
+		}
+		section.locations aside div.locationsGroup {
+			width:40%;
+			float:left;
+		}
+		section.locations aside div.locationFrame {
+			width:60%;
+			float:left;
+		}
 }
 
 @media screen and (max-width:874px) {
@@ -41,36 +67,53 @@
 		}
 
 	/* COMMUNICATIONS */
-
 }
 
+@media screen and (max-width:700px) {
+	/* LOCATIONS */
+		section.locations aside div.locationsInfo {
+			width:100%;
+			clear:both;
+			text-align: center;
+		}
+		section.locations aside div.locationsInfo {
+			margin: 2px;
+		}
+		section.locations aside div.locationsInfo:nth-child(odd) {
+			text-align:center;
+		}
+}
 @media screen and (max-width:640px) {
 
-	h1 { font-size: 2.2em; }
+	/* TEXT AREA */
 
-	.subtitleParagraph {
-		font-size:1.2em;
-		line-height: 1.1em;
-	}
-	header {
-		height:300px;
-	}
-	#logoImage {
-		max-height: 72px;
-		margin: 6px auto;
-	}
-	header .carouselContainer {
-		max-width:384px;
-	}
-	.carousel-inner > .item > img,
-	.carousel-inner > .item > a > img {
-		max-height: 216px;
-	}
+		h1 { font-size: 2.2em; }
+
+		.subtitleParagraph {
+			font-size:1.2em;
+			line-height: 1.1em;
+		}
+
+	/* HEADER AREA */
+		header {
+			height:300px;
+		}
+		#logoImage {
+			max-height: 72px;
+			margin: 6px auto;
+		}
+		header .carouselContainer {
+			max-width:384px;
+		}
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+			max-height: 216px;
+		}
 
 	/* ABOUT US */
 		section.aboutUs aside div.content {
-				padding: 5px 0px 10px 0px;
-			}
+			padding: 5px 0px 10px 0px;
+		}
 		section.aboutUs .content.personal-training {
 			background-image: none;
 		}
@@ -97,29 +140,64 @@
 			display:block;
 			clear:both;
 		}
+
+	/* LOCATIONS */
+		
+
+}
+
+@media screen and (max-width:470px) {
+
+	/* LOCATIONS */
+		section.locations aside {
+			margin-bottom: 10px;
+		}
+		section.locations aside h2 {
+			font-size: 1em;
+		}	
+		section.locations aside div.locationsGroup{
+			width:inherit;
+		}
+		section.locations aside div.locationsInfo {
+			clear:both;
+			text-align: center;
+		}
+		section.locations aside div.locationFrame {
+			display:none;
+		}
+}
+
+@media screen and (max-width:445px) {
+
+	/* COMMUNICATIONS */
+		section.communications aside:nth-child(2) {
+			display:none;
+		}
 }
 
 @media screen and (max-width:385px) {
 
-	h1 { font-size: 1.8em; }
-	h2 { font-size: 1.4em; }
-	h3 { font-size: 1.1em; }
+	/* TEXT AREA */
+		h1 { font-size: 1.8em; }
+		h2 { font-size: 1.4em; }
+		h3 { font-size: 1.1em; }
 
-	.subtitleParagraph {
-		font-size: 1.1em;
-		line-height: 1.05em;
-	}
+		.subtitleParagraph {
+			font-size: 1.1em;
+			line-height: 1.05em;
+		}
 
-	header { 
-		height: 250px; 
-	}
-	header .carouselContainer {
-		max-width:293px;
-	}
-	.carousel-inner > .item > img,
-	.carousel-inner > .item > a > img {
-		max-height: 165px;
-	}
+	/* HEADER AREA */
+		header { 
+			height: 250px; 
+		}
+		header .carouselContainer {
+			max-width:293px;
+		}
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+			max-height: 165px;
+		}
 
 	/* JOIN US */
 		section.joinUs form input.joinButton {
