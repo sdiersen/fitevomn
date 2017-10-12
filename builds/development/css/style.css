@@ -118,7 +118,7 @@ hr.roundedDown:before {
 
 /* MISSION STATEMENT SECTIONS */
 	section.missionStatement {
-		display: none;
+		
 	}
 
 /* SPECIAL ANNOUNCEMENTS SECTION */
@@ -128,7 +128,6 @@ hr.roundedDown:before {
 
 /* ABOUT US SECTION */
 	section.aboutUs {
-		display:none;
 		margin: 20px 10px 30px 10px;
 		padding: 0;
 	}
@@ -161,7 +160,6 @@ hr.roundedDown:before {
 
 /* JOIN US SECTION */
 	section.joinUs {
-		display:none;
 		text-align: center;
 	}
 
@@ -181,7 +179,6 @@ hr.roundedDown:before {
 
 /* COMMUNICATIONS SECTION */
 	section.communications {
-		display: none;
 		margin-top: 20px;
 	}
 
