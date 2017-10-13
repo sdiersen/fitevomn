@@ -1,29 +1,34 @@
 
-hr.roundedDown { 
-  height: 30px; 
-  border-style: solid; 
-  border-color: #FF6600; 
-  border-width: 2px 0 0 0; 
-  border-radius: 20px; 
-} 
-hr.roundedDown:before { 
-  display: block; 
-  content: ""; 
-  height: 30px; 
-  margin-top: -31px; 
-  border-style: solid; 
-  border-color: #FF6600; 
-  border-width: 0 0 1px 0; 
-  border-radius: 20px; 
-}
+
 
 /* ID Page top level content holder */
-#page {
+	body > div {
+		position:relative;
+		width:inherit;
+	}
+	#page {
 
-}
-#pageContent {
-  
-}
+	}
+	#pageContent {
+	  
+	}
+	hr.roundedDown { 
+		height: 30px; 
+		border-style: solid; 
+		border-color: #FF6600; 
+		border-width: 2px 0 0 0; 
+		border-radius: 20px; 
+	} 
+	hr.roundedDown:before { 
+		display: block; 
+		content: ""; 
+		height: 30px; 
+		margin-top: -31px; 
+		border-style: solid; 
+		border-color: #FF6600; 
+		border-width: 0 0 1px 0; 
+		border-radius: 20px; 
+	}
 
 /* ALL SECTION AREA */
 	section::after { content:''; display:block; clear:both; }
@@ -188,9 +193,95 @@ hr.roundedDown:before {
 		margin:10px 0;
 	}
 
-nav {
-	display: none;
-}
+/* NAVIGATRION AREA */
+	nav {
+		background-color: rgba(0,150,0,.65);
+		position: absolute;
+		top:0px;
+		width:inherit;
+	}
+	nav::after {
+		content: '';
+		display:block;
+		clear:both;
+	}
+	nav ul li {
+		border:1px solid #F60;
+		border-radius: 15px;
+		border-collapse: collapse;
+	}
+	nav ul {
+		list-style: none;
+		padding:0;
+	}
+	nav ul li a {
+		display: inline-block;
+		color:#FFF;
+		padding:10px 20px;
+		text-decoration: none;
+		width:auto;
+		position: relative;
+	}
+	nav ul li a:visited {
+		color: #FFF;
+	}
+	nav ul li a:hover {
+		background-color: #6D0911;
+	}
+	nav ul li:hover {
+		background-color: #2B0306;
+	}
+
+	/* TOP LEVEL NAVIGATION */
+		nav > ul {
+			
+		}
+		nav > ul > li {
+			float:left;
+		}
+		nav > ul > li > a {
+			width:auto;
+			padding:10px 20px 15px 20px;
+		}
+	
+	nav ul ul {
+		position:absolute;
+		top:100%;
+		background-color: #2B0306;
+		display: none;
+	}	
+	nav ul ul li {
+		position:relative;
+	}
+	nav ul ul ul {
+		left:100%;
+		top:0px;
+	}
+	nav ul li:hover > ul {
+		display:block;
+	}
+/*	nav a[aria-haspopup="true"]::after {
+		content: '';
+		display:block;
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:16px;
+		right:15px;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		border-left: 4px solid #FFF;
+	}
+	nav > ul > li > a[aria-haspopup="true"]::after {
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid #FFF;
+		left: 20px;
+		right: auto;
+		bottom: 6px;
+		top:auto;
+	}
+*/
 
 footer {
 	display: none;
