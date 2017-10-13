@@ -527,7 +527,5 @@ a.greyHyperLinkCL:hover {
 /* MEDIA SCREEN WIDTH MAX FOR DEVICE */ 
 
 @media screen and (max-device-width:470px) {
-	body {
-		font-size: 2em;
-	}
+
 }
