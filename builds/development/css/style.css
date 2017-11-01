@@ -132,7 +132,7 @@ p { margin: 0 0 1em 0; }
 
 /* SPECIAL ANNOUNCEMENTS SECTION */
 	.specialAnnouncements {
-		display: none;
+		
 	}
 
 /* ABOUT US SECTION */
@@ -259,101 +259,43 @@ p { margin: 0 0 1em 0; }
 		margin:10px 0;
 	}
 
-/* NAVIGATRION AREA */
-	/*nav {		
-		position: absolute;
-		top:42px;
-		left:502px;
-		width:inherit;
-	}
-	nav::after {
-		content: '';
-		display:block;
-		clear:both;
-	}
-	nav ul li {
-		background-color: rgba(0,150,0,.65);
-		border:1px solid #F60;
-		border-radius: 15px;
-		border-collapse: collapse;
-	}
-	nav ul {
-		list-style: none;
-		padding:0;
-		margin:0;
-	}
-	nav ul li a {
-		display: inline-block;
-		color:#FFF;
-		padding:10px 20px;
-		text-decoration: none;
-		width:auto;
-		position: relative;
-	}
-	nav ul li a:visited {
-		color: #FFF;
-	}
-	nav ul li:hover {
-		background-color: #2B0306;
-	}*/
-
-	/* TOP LEVEL NAVIGATION */
-		/*nav > ul {
-			
-		}
-		nav > ul > li {
-			float:left;
-		}
-		nav > ul > li > a {
-			width:auto;
-			padding:10px 20px 15px 20px;
-		}
-	
-	nav ul ul {
-		position:absolute;
-		top:100%;
-		display: none;
-	}	
-	nav ul ul li {
-		position:relative;
-	}
-	nav ul ul ul {
-		left:100%;
-		top:0px;
-	}
-	nav ul li:hover > ul {
-		display:block;
-	}*/
-/*	nav a[aria-haspopup="true"]::after {
-		content: '';
-		display:block;
-		width:0px;
-		height:0px;
-		position:absolute;
-		top:16px;
-		right:15px;
-		border-top: 4px solid transparent;
-		border-bottom: 4px solid transparent;
-		border-left: 4px solid #FFF;
-	}
-	nav > ul > li > a[aria-haspopup="true"]::after {
-		border-left: 4px solid transparent;
-		border-right: 4px solid transparent;
-		border-top: 4px solid #FFF;
-		left: 20px;
-		right: auto;
-		bottom: 6px;
-		top:auto;
-	}
-*/
 
 footer {
-	display: none;
 }
 
 hr {
 	display: none;
 }
+
+/* flex container basics */
+
+.myContainerClubInfo {
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: space-around;
+}
+.myContainedClubInfo {
+	flex: 0 1 auto;
+	text-align: right;
+}
+.myContainerSpecialAnnouncements {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.myContainedSpecialAnnouncements {
+	flex: 0 1 auto;
+	text-align: center;
+}
+.margin-top-1 {
+	margin-top: 1em;
+}
+
+.margin-top-2 {
+	margin-top: 2em;
+}
+
+
 .pageLink:link {
 	text-decoration:none;
 	color:#ff6600;
@@ -424,11 +366,7 @@ a.greyHyperLinkCL:hover {
 			font-size: 1.8em;
 		}
 
-	/* NAVIGATION */
-		/*nav li a {
-			font-size:.8em;
-		}*/
-
+	
 }
 
 @media screen and (max-width:1100px) {
@@ -443,61 +381,10 @@ a.greyHyperLinkCL:hover {
 		
 }
 
-@media screen and (max-width:1050px) {
-	/* HEADER */
-		/* image dims: 384px x 100px
-			with margins 424px x 120px */
-		header div img#logoImage {
-			height:100px;
-		}
-		header {
-			height: 480px;
-		}
 
-	/* NAVIGATION */
-/*		nav {
-			top:32px;
-			left: 425px;
-		}
-		nav ul li a {
-			padding: 10px 14px;
-		}*/
-
-	
-}
 
 @media screen and (max-width:890px) {
-	/* HEADER */
-		header div.headerImg {
-			text-align: center;
-		}
-		header {
-			height: 530px;
-		}
-		header .carouselContainer {
-			position: absolute;
-			top: 170px;
-			left: 0px;
-		}
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-			width: 100%;
-			max-height: 360px;
-			margin: auto;
-		}
-
-
-	/* NAVIGATION */
-/*		nav {
-			top:110px;
-			left:0px;
-			width:100%;
-			margin-top: 8px;
-		}
-		nav ul li {
-			margin-right: 4px; 
-		}*/
-
+	
 	/* LOCATIONS */
 		section.locations aside h2 {
 			font-size: 1.2em;
@@ -563,33 +450,6 @@ a.greyHyperLinkCL:hover {
 			line-height: 1.1em;
 		}
 
-	/* HEADER AREA */
-		header {
-			height:315px;
-		}
-		header div img#logoImage {
-			max-height: 60px;
-		}
-
-		header .carouselContainer {
-			top:100px;
-		}
-		
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-			max-height: 216px;
-		}
-	/* NAVIGATION */
-/*		nav {
-			top: 60px;
-		}
-		nav ul li {
-			margin:0 6px;
-		}
-		nav ul li a {
-			padding:0 4px;
-		}*/
-
 	/* ABOUT US */
 		section.aboutUs aside div.content {
 			padding: 5px 0px 10px 0px;
@@ -651,7 +511,7 @@ a.greyHyperLinkCL:hover {
 	/* HEADER */
 
 	/* NAVIGATION */
-		
+
 
 	/* COMMUNICATIONS */
 		section.communications aside:nth-child(2) {

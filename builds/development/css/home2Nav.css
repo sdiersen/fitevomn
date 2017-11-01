@@ -1,0 +1,4 @@
+/* NAVIGATION AREA */
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+	}

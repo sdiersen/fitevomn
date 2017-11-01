@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+body {
+	font-family:'Muli', sans-serif;
+	max-width: 1170px;
+	margin:0 auto;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	color: #FF6600;
+	font-weight: 700;
+}
+
+h1 { margin: 0 0 .5em 0; font-size: 2.8em; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; }
+
+p { margin: 0 0 1em 0; }
+
+#footerContainer {
+	max-width: inherit;
+}
+
+.subtitleParagraph {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.25em;
+	margin: 0 1.25em 1.25em 1.25em;
+}
+
+
+/* BUTTONS */
+	.joinButton {
+		width:55%;
+		border-radius:.5em;
+		font-size:2em;
+		box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		background:#ff6600;
+		font-family:'Muli';
+	}
+
+	.joinButton:hover {
+		box-shadow:none;
+		cursor:pointer;
+	}
+.greyText {
+	color: #a1a1a1;
+}
+.greyBackground {
+	background-color: #a1a1a1;
+}
+
+.orangeText {
+	color: #FF6600;
+}
+.orangeBackground {
+	background-color: #FF6600;
+}
+.pageLink:link {
+	text-decoration:none;
+	color:#ff6600;
+}
+
+.pageLink:visited {
+  color:#ff6600;
+}
+
+.pageLink:hover {
+	background:#ff6600;
+	border-radius:.5em;
+	color:black;
+}
+
+.innerPageLink:link {
+	font-size:1em;
+	line-height:1.5em;
+	text-decoration:none;
+	color:#ff6600;
+}
+
+.innerPageLink:visited {
+	color:#ff6600;
+}
+
+.innerPageLink:hover {
+	background:#ff6600;
+	border-radius:.5em;
+	color:black;
+}
+
+p.greyHyperLinkCL {
+	width:100%;
+	font-size:1.5em;
+	line-height:1em;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+a.greyHyperLinkCL:link {
+	text-decoration: none;
+	color: #777777;
+}
+
+a.greyHyperLinkCL:visited {
+	color: #777777;
+}
+
+a.greyHyperLinkCL:hover {
+	background: #777777;
+	border-radius: .5em;
+	color: black;
+}
+/* ALL SECTION AREA */
+	section::after { content:''; display:block; clear:both; }
+
+/* HEADER SECTION */
+	header {
+		height: 500px; 
+		background: black no-repeat fixed center top; 
+		position: relative;
+		margin:0 0 1em 0;
+	}
+	header div img#logoImage {
+		/*  image becomes 461 px x 120px 
+			with margins 501px x 140px
+			*/
+		max-height:120px;
+		margin: 10px 20px;
+	}
+
+	header > div {
+		width:100%;
+		
+	}
+
+		body > div {
+		position:relative;
+		width:inherit;
+	}
+
+
+/* NAVIGATRION AREA */
+	nav {		
+		position: absolute;
+		top:42px;
+		left:502px;
+		width:inherit;
+	}
+	nav::after {
+		content: '';
+		display:block;
+		clear:both;
+	}
+	nav ul li {
+		background-color: rgba(0,150,0,.65);
+		border:1px solid #F60;
+		border-radius: 15px;
+		border-collapse: collapse;
+	}
+	nav ul {
+		list-style: none;
+		padding:0;
+		margin:0;
+	}
+	nav ul li a {
+		display: inline-block;
+		color:#FFF;
+		padding:10px 20px;
+		text-decoration: none;
+		position: relative;
+		white-space: nowrap;
+	}
+	nav ul li a:visited {
+		color: #FFF;
+	}
+	nav ul li:hover {
+		background-color: #2B0306;
+	}
+
+	/* TOP LEVEL NAVIGATION */
+		nav > ul {
+			
+		}
+		nav > ul > li {
+			float:left;
+		}
+		nav > ul > li > a {
+			padding:10px 20px 15px 20px;
+		}
+	
+	nav ul ul {
+		position:absolute;
+		top:100%;
+		display: none;
+	}	
+	nav ul ul li {
+		position:relative;
+	}
+	nav ul ul ul {
+		left:100%;
+		top:0px;
+	}
+	nav ul li:hover > ul {
+		display:block;
+	}
+
+/* JOIN US SECTION */
+	section.joinUs {
+		text-align: center;
+	}
+
+/* ABOUT US SECTION */
+	section.aboutUs {
+		margin: 20px 10px 30px 10px;
+		padding: 0;
+		border: 2px dashed green;
+	}
+	section.aboutUs > p {
+		text-align: center;
+		font-style: italic;
+	}
+	section.aboutUs aside {
+		width: 33%;
+		float: left;
+		text-align: center;
+	}
+
+	section.aboutUs .content {
+		margin: 15px;
+		background: no-repeat center top;
+		background-size: 75px 75px;
+		padding-top: 85px;
+	}
+
+	section.aboutUs .content.personal-training {
+		background-image: url('../images/svg/personal-training.svg');
+	}
+	section.aboutUs .content.group-fitness {
+		background-image: url('../images/svg/group-fitness.svg');
+	}
+	section.aboutUs .content.amenities {
+		background-image: url('../images/svg/amenities.svg');
+	}
+
+
+/* My carousel stuff */
+section.myCarousel {
+	border: 1px solid red;
+	width:inherit;
+	position: relative;
+}
+
+ol.carouselbox{
+	margin:0;
+	padding:0;
+}
+.carouselbox {
+	position: absolute;
+	top: 0px;
+	left: 190px;
+	width: 790px;
+	min-height: 340px;
+ 	font-family: helvetica,sans-serif;
+	font-size: 14px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+
+
+.carouselImage {
+	position: absolute;
+	top: 32px;
+	left: 100px;
+	width: 590px;
+	min-height: 300px;
+	max-height: 300px;
+	overflow:hidden;
+	border: 1px dashed green;
+}
+
+/*.carouselcontent {
+	margin: 0;
+	padding: 0;
+}
+
+.carouselcontent li {
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;	
+}
+.carouselactive {
+	height: 130px;
+}
+.carouselactive li {
+	position: absolute;
+	top: 200px;
+}
+.active li.carouselcurrent {
+	top: 30px;
+}*/
+
+
+/* flex container basics */
+
+.myContainerClubInfo {
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: space-around;
+}
+.myContainedClubInfo {
+	flex: 0 1 auto;
+	text-align: right;
+}
+.myContainerSpecialAnnouncements {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.myContainedSpecialAnnouncements {
+	flex: 0 1 auto;
+	text-align: center;
+}
+.margin-top-1 {
+	margin-top: 1em;
+}
+
+.margin-top-2 {
+	margin-top: 2em;
+}
