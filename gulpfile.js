@@ -38,11 +38,20 @@ var cssBuffalo = [
 
 var htmlSources = [
 	'builds/development/*.html',
-	'builds/development/buffalo/*.html'
+	'builds/development/buffalo/*.html',
+	'builds/development/test/*.html'
 ];
 var jsonSources = [
 	'builds/development/js/*.json'
 ];
+var cssTest = [
+	'test/layout/*.css'
+];
+
+var jsTest = [
+	'test/layout/*.js'
+];
+
 
 gulp.task('js', function() {
 	gulp.src(jsSources)
@@ -50,7 +59,12 @@ gulp.task('js', function() {
 		.pipe(gulp.dest('builds/development/js'))
 		.pipe(connect.reload())
 });
-
+gulp.task('jsTest', function() {
+	gulp.src(jsTest)
+		.pipe(concat('layout.js'))
+		.pipe(gulp.dest('builds/development/test'))
+		.pipe(connect.reload())
+});
 gulp.task('css', function() {
 	gulp.src(cssSources)
 		.pipe(concat('style.css'))
@@ -76,6 +90,13 @@ gulp.task('css4', function() {
 	gulp.src(cssBuffalo)
 		.pipe(concat('buffalo.css'))
 		.pipe(gulp.dest('builds/development/css'))
+		.pipe(connect.reload())
+});
+
+gulp.task('css5', function() {
+	gulp.src(cssTest)
+		.pipe(concat('layout.css'))
+		.pipe(gulp.dest('builds/development/test'))
 		.pipe(connect.reload())
 });
 
@@ -110,6 +131,8 @@ gulp.task('watch', function() {
 	gulp.watch(cssBuffalo, ['css4']);
 	gulp.watch(htmlSources, ['html']);
 	gulp.watch(jsonSources, ['json']);
+	gulp.watch(cssTest, ['css5']);
+	gulp.watch(jsTest, ['jsTest']);
 });
 
 
@@ -120,4 +143,4 @@ gulp.task('connect', function() {
 	});
 })
 
-gulp.task('default', ['html','json', 'js', 'css', 'css2', 'css3', 'css4', 'connect', 'watch']);
+gulp.task('default', ['html','json', 'js', 'jsTest', 'css', 'css2', 'css3', 'css4', 'css5', 'connect', 'watch']);

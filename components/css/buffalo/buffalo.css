@@ -166,7 +166,9 @@ ol.carouselbox{
 	max-height: 300px;
 	overflow:hidden;
 	border: 1px dashed green;
+	color:bisque;
 }
+
 
 /*.carouselcontent {
 	margin: 0;
@@ -180,6 +182,7 @@ ol.carouselbox{
 	width: 100%;
 	list-style: none;
 	text-align: center;	
+	color: white;
 }
 .carouselactive {
 	height: 130px;
