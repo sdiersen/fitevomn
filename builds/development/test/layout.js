@@ -1,32 +1,34 @@
 $(document).ready(function() {
 	var events = $(".myCarouselItem").toArray();
-	var number_of_events = events.length;
-	var current_event = getCurrentEvent(events);
-	$("#testvalue").html("hello");
+	var number_of_events = parseInt(events.length);
+	var current_event = parseInt(getCurrentEvent(events));
+	$("#testvalue").html(number_of_events);
 	$("#myCarouselActiveItem").html(current_event);
-	$("div.myCarouselNextItem").click(function() {
-		$(this).css({"background-color":"black"});
-	});
+	$("div.myCarouselNextItem").click(function() { setNextEvent(); });
+	$("div.myCarouselPrevItem").click(function() { setPrevEvent(); });
 
-	var counter = 0;
+	function setNextEvent() {
+		$('.myCarouselItem[data-carousel-item-number="' + current_event + '"]').removeAttr("id");
+		$('.myCarouselItemThumb[data-carousel-thumb-item-number="' + current_event + '"]').removeAttr("id");
+		current_event += 1;
+		if(current_event > number_of_events) { current_event = 1; }
+		$('.myCarouselItem[data-carousel-item-number="' + current_event + '"]').attr('id', 'myCarouselActiveItem');
+		$('.myCarouselItemThumb[data-carousel-thumb-item-number="' + current_event + '"]').attr('id', 'myCarouselActiveItemThumb');
+		
+	}
+	function setPrevEvent() {
+		$('.myCarouselItem[data-carousel-item-number="' + current_event + '"]').removeAttr("id");
+		$('.myCarouselItemThumb[data-carousel-thumb-item-number="' + current_event + '"]').removeAttr("id");
+		current_event -= 1;
+		if(current_event < 1) { current_event = number_of_events; }
+		$('.myCarouselItem[data-carousel-item-number="' + current_event + '"]').attr('id', 'myCarouselActiveItem');
+		$('.myCarouselItemThumb[data-carousel-thumb-item-number="' + current_event + '"]').attr('id', 'myCarouselActiveItemThumb');
+	}	
 });
 function getCurrentEvent(events) {
-	// $.each(events, function(key, value) {
-	// 	var blah = value;
-	// 	// if(value.indexOf("myCarouselActiveItem") >= 0) {
-
-	// 	// 	return key;
-	// 	// }
-	// 	$("div.myCarouselPrev").append(blah);
-	// });
-	// return 53;
-	var data = $(":contains('myCarouselActiveItem')").attr("data-carousel-item-number");
+	var data = $("#myCarouselActiveItem").attr("data-carousel-item-number");
 	return data;
 }
-function setNextEvent(event) {
 
-}
 
-function setPrevEvent(event) {
 
-}
