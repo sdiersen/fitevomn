@@ -45,7 +45,7 @@ var jsonSources = [
 	'builds/development/js/*.json'
 ];
 var cssTest = [
-	'test/layout/*.css'
+	'test/layout/media-layout.css'
 ];
 
 var jsTest = [

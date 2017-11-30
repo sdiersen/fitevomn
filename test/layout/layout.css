@@ -8,129 +8,133 @@ header {
     background-color: black;
     height: 400px;                
 }
-.headerLogoContainer {
-    width:100%;
-    height: 55px;
-    position: absolute;
-    top:0px;
-    left:0px; 
-   background-color:darkgrey;
-}
-.headerLogo {
-    position: absolute;
-    top:16px;
-    left:16px;
-    color:#f60;
-}
-.myCarousel {
-    position: absolute;
-    width:100%;
-    height:345px;
-    top:55px;
-    left:0px;
-    color:aqua;
-}
-.myCarouselPrev {
-	position: absolute;
-    top:0;
-    left:0;
-    width:15%;
-    height: inherit;
-    background-color: green;
-}
-.myCarouselPrevItem {
-    position: absolute;
-	top: 126px;
-	left: 36px;
-	font-size: 3em;
-}
-.myCarouselNext {
-    position: absolute;
-    top:0;
-    left:680px;
-    width:15%;
-    height: inherit;
-    background-color: green;
-}
-.myCarouselNextItem {
-    position:absolute;
-	top: 126px;
-	left: 36px;
-	font-size:3em;
-}
-.myCarouselListContainer {
-    position:absolute; 
-	top:0px;
-	left:120px;
-	width: 560px;
-	height: 315px;
-}
-.myCarouselList {
-    position: relative;
-    height: inherit;
-}
-.myCarouselItem {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-    font-size: 2em;
-    display:none;
+/* HEADER */
+    .headerLogoContainer {
+        width:100%;
+        height: 55px;
+        position: absolute;
+        top:0px;
+        left:0px; 
+       background-color:darkgrey;
+    }
+    .headerLogo {
+        position: absolute;
+        top:16px;
+        left:16px;
+        color:#f60;
+    }
 
-}
-#myCarouselActiveItem {
-    color:black;
-    display:block;
-}
-.myCarouselThumbnails {
-	position: absolute;
-	background-color: antiquewhite;
-	top:315px;
-	left:120px;
-	height: 30px;
-	width: 560px;
-}
-.myCarouselItemThumb {
-    display:inline-block;
-    width: 1em;
-    height: 1em;
+/* CAROUSEL */
+    .myCarousel {
+        position: absolute;
+        width:100%;
+        height:345px;
+        top:55px;
+        left:0px;
+        color:aqua;
+    }
+    .myCarouselPrev {
+    	position: absolute;
+        top:0;
+        left:0;
+        width:15%;
+        height: inherit;
+        background-color: green;
+    }
+    .myCarouselPrevItem {
+        position: absolute;
+    	top: 126px;
+    	left: 36px;
+    	font-size: 3em;
+    }
+    .myCarouselNext {
+        position: absolute;
+        top:0;
+        left:680px;
+        width:15%;
+        height: inherit;
+        background-color: green;
+    }
+    .myCarouselNextItem {
+        position:absolute;
+    	top: 126px;
+    	left: 36px;
+    	font-size:3em;
+    }
+    .myCarouselListContainer {
+        position:absolute; 
+    	top:0px;
+    	left:120px;
+    	width: 560px;
+    	height: 315px;
+    }
+    .myCarouselList {
+        position: relative;
+        height: inherit;
+    }
+    .myCarouselItem {
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        font-size: 2em;
+        display:none;
 
-}
-#myCarouselActiveItemThumb {
-    box-shadow: inset 0 0 1em gold, 0 0 1em red;
-}
-ul.myCarouselList, ul.myCarouselListThumb {
-    list-style: none;
-	padding:0;
-	margin:0;
-}
-ul.myCarouselListThumb {
-	text-align: center;
-}
-li.myCarouselItemThumb {
-	color: red;
-	margin: 5px 30px;
-}
-li.myCarouselItemThumb:hover,
-div.myCarouselPrevItem:hover,
-div.myCarouselNextItem:hover {
-	cursor: pointer;
-}
+    }
+    #myCarouselActiveItem {
+        color:black;
+        display:block;
+    }
+    .myCarouselThumbnails {
+    	position: absolute;
+    	background-color: antiquewhite;
+    	top:315px;
+    	left:120px;
+    	height: 30px;
+    	width: 560px;
+    }
+    .myCarouselItemThumb {
+        display:inline-block;
+        width: 1em;
+        height: 1em;
 
-.backgroundOne {
-    background-color: red;
-}
-.backgroundTwo {
-    background-color: blue;
-}
-.backgroundThree {
-    background-color: yellow;
-}
+    }
+    #myCarouselActiveItemThumb {
+        box-shadow: inset 0 0 1em gold, 0 0 1em red;
+    }
+    ul.myCarouselList, ul.myCarouselListThumb {
+        list-style: none;
+    	padding:0;
+    	margin:0;
+    }
+    ul.myCarouselListThumb {
+    	text-align: center;
+    }
+    li.myCarouselItemThumb {
+    	color: red;
+    	margin: 5px 30px;
+        font-size: 1em;
+    }
+    li.myCarouselItemThumb:hover,
+    div.myCarouselPrevItem:hover,
+    div.myCarouselNextItem:hover {
+    	cursor: pointer;
+    }
 
-.backgroundFour {
-    background-color: purple;
-}
+    .backgroundOne {
+        background-color: red;
+    }
+    .backgroundTwo {
+        background-color: blue;
+    }
+    .backgroundThree {
+        background-color: yellow;
+    }
+
+    .backgroundFour {
+        background-color: purple;
+    }
 
 /* END HEADER */
 /*-------------*/
