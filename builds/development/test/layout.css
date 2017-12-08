@@ -202,10 +202,10 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			
+			font-size: .75em;
 		}
 		nav ul li a {
-			padding:4px 8px;
+			padding:4px 6px;
 		}
 		
 		nav ul ul ul {
