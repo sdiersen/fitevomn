@@ -135,8 +135,84 @@ header {
 	nav ul li:hover > ul {
 		display: block;
 	}
+@media screen and (max-device-width: 599px) and (orientation: portrait) {
+	body {
+		font-size: 48px;
+		width:100%;
+	}
+	header {
+		height: 40%;
+		background-color: black;
+	}
 
-@media screen and (max-width:800px) and (min-width:500px) {
+	/* HEADER */
+		.headerLogoContainer {
+			height: 10%;
+			top: 0px;
+			left: 0px;
+		}
+		.headerLogo {
+			top: 16px;
+			left: 16px;
+		}
+	
+	/* CAROUSEL */
+		.myCarousel {
+			width:100%;
+			height: 90%;
+			top: 10%;
+			left: 0px;
+		}
+		.myCarouselPrev {
+			top: 0px;
+			left: 5%;
+			width:0px;
+			z-index: 1;
+		}
+		.myCarouselNext {
+			top: 0px;
+			left: 80%;
+			width: 0px;
+			z-index: 1;
+		}
+		.myCarouselPrevItem, .myCarouselNextItem {
+			top: 35%;
+			left: 0px;
+		}
+		.myCarouselListContainer {
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+		.myCarouselItem {
+			top: 0px;
+			left: 0px;
+		}
+		.myCarouselThumbnails {
+			top: 90%;
+			left: 0px;
+			height: 10%;
+			width: 100%;
+		}
+		li.myCarouselItemThumb {
+			margin: 5px 30px;
+		}
+
+	/* NAVIGATION */
+		nav {
+			/*top: 4%;*/
+		}
+		nav ul li a {
+			padding:8px 16px;
+		}
+		
+		nav ul ul ul {
+			top: 0px;
+		}
+}
+@media screen and (max-width:800px) and (min-width:500px) and (min-device-width:600px) {
 	body {
 		font-size: 12px;
 		width:500px;
@@ -213,7 +289,7 @@ header {
 			top: 0px;
 		}
 }
-@media screen and (min-width:801px) and (max-width:1050px) {
+@media screen and (min-width:801px) and (max-width:1050px) and (min-device-width:600px) {
 	body {
 		font-size: 16px;
 		width:800px;
@@ -287,7 +363,7 @@ header {
 			top: 0px;
 		}
 }
-@media screen and (min-width:1051px) {
+@media screen and (min-width:1051px) and (min-device-width:600px) {
 	body {
 		font-size: 24px;
 		width: 1000px;
