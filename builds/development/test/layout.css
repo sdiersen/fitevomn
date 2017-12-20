@@ -204,11 +204,14 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			font-size: 1em;
+			font-size: .8em;
 			top: 51px;
 			left: 0px;
 			width:100%;
 			background-color: black;
+		}
+		nav > ul {
+			float: right;
 		}
 		nav ul li a {
 			padding:2px 7px;
