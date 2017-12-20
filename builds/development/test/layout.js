@@ -10,7 +10,7 @@ $(document).ready(function() {
 		}, 5000);
 	};
 	timer();
-	$("#testvalue").html(number_of_events);
+	//$("#testvalue").html(number_of_events);
 	$("#myCarouselActiveItem").html(current_event);
 	$("div.myCarouselNextItem").click(function() { 
 		setNextEvent();

@@ -141,26 +141,28 @@ header {
 		width:100%;
 	}
 	header {
-		height: 50%;
+		height: 304px;
 		background-color: black;
 	}
 
 	/* HEADER */
 		.headerLogoContainer {
-			height: 20%;
+			height: 50px;
 			top: 0px;
 			left: 0px;
+			background-color: black;
+
 		}
 		.headerLogo {
-			top: 16px;
-			left: 16px;
+			top: 0px;
+			left:84px;
 		}
 	
 	/* CAROUSEL */
 		.myCarousel {
 			width:100%;
-			height: 80%;
-			top: 20%;
+			height: 203px;
+			top: 71px;
 			left: 0px;
 		}
 		.myCarouselPrev {
@@ -191,9 +193,9 @@ header {
 			left: 0px;
 		}
 		.myCarouselThumbnails {
-			top: 90%;
+			top: 203px;
 			left: 0px;
-			height: 15%;
+			height: 30px;
 			width: 100%;
 		}
 		li.myCarouselItemThumb {
@@ -202,14 +204,28 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			font-size: .75em;
+			font-size: 1em;
+			top: 51px;
+			left: 0px;
+			width:100%;
+			background-color: black;
 		}
 		nav ul li a {
-			padding:4px 6px;
+			padding:2px 7px;
+			margin: 0px 1px;
+			color: #f60;
+		}
+		nav ul li a:visited {
+			color: #f60;
 		}
 		
 		nav ul ul ul {
 			top: 0px;
+		}
+		nav ul li {
+			background-color: black;
+			border-radius:0px;
+			border: none;
 		}
 }
 @media screen and (max-width:800px) and (min-width:500px) and (min-device-width:600px) {
