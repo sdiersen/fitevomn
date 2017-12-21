@@ -11,7 +11,7 @@ $(document).ready(function() {
 	};
 	timer();
 	//$("#testvalue").html(number_of_events);
-	$("#myCarouselActiveItem").html(current_event);
+	//$("#myCarouselActiveItem").html(current_event);
 	$("div.myCarouselNextItem").click(function() { 
 		setNextEvent();
 		if (timer_on) {
