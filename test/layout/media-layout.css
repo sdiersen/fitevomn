@@ -10,7 +10,7 @@ header {
 	.headerLogoContainer {
 		width:100%;
 		position:absolute;
-		background-color: darkgrey;
+		background-color: black;
 	}
 	.headerLogo {
 		position:absolute;
@@ -142,7 +142,6 @@ header {
 	}
 	header {
 		height: 304px;
-		background-color: black;
 	}
 
 	/* HEADER */
@@ -154,15 +153,18 @@ header {
 
 		}
 		.headerLogo {
-			top: 0px;
+			top: 1px;
 			left:84px;
+		}
+		.logoImage {
+			height: 50px;
 		}
 	
 	/* CAROUSEL */
 		.myCarousel {
 			width:100%;
 			height: 203px;
-			top: 71px;
+			top: 65px;
 			left: 0px;
 		}
 		.myCarouselPrev {
@@ -205,7 +207,7 @@ header {
 	/* NAVIGATION */
 		nav {
 			font-size: .8em;
-			top: 51px;
+			top: 50px;
 			left: 0px;
 			width:100%;
 			background-color: black;
@@ -238,7 +240,6 @@ header {
 	}
 	header {
 		height: 360px;
-		background-color: black;
 	}
 
 	/* HEADER */
@@ -246,14 +247,14 @@ header {
 			height: 62px;
 			top: 0px;
 			left: 0px;
-			background-color: black;
-
 		}
 		.headerLogo {
-			top: 12px;
+			top: 1px;
 			left:12px;
 		}
-	
+		.logoImage {
+			height: 60px;
+		}
 	/* CAROUSEL */
 		.myCarousel {
 			width:100%;
@@ -301,7 +302,7 @@ header {
 	/* NAVIGATION */
 		nav {
 			font-size: .7em;
-			top: 29px;
+			top: 22px;
 			left: 0px;
 			width:100%;
 			
@@ -344,8 +345,11 @@ header {
 			left: 0px;
 		}
 		.headerLogo {
-			top: 16px;
+			top: 1px;
 			left: 16px;
+		}
+		.logoImage {
+			height: 38px;
 		}
 	
 	/* CAROUSEL */
@@ -394,7 +398,7 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			top: 10px;
+			top: 8px;
 			left: 44%;
 		}
 		nav ul li a {
@@ -421,8 +425,11 @@ header {
 			left: 0px;
 		}
 		.headerLogo {
-			top: 16px;
+			top: 1px;
 			left: 16px;
+		}
+		.logoImage {
+			height:53px;
 		}
 	
 	/* CAROUSEL */
@@ -468,7 +475,7 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			top: 10px;
+			top: 8px;
 			left: 44%;
 		}
 		nav ul li a {
@@ -494,8 +501,11 @@ header {
 			left: 0px;
 		}
 		.headerLogo {
-			top: 16px;
+			top: 10px;
 			left: 16px;
+		}
+		.logoImage {
+			height: 70px;
 		}
 
 	/* CAROUSEL */
@@ -542,7 +552,7 @@ header {
 
 	/* NAVIGATION */
 		nav {
-			top: 10px;
+			top: 25px;
 			left: 44%;
 		}
 		
