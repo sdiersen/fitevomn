@@ -135,7 +135,7 @@ header {
 	nav ul li:hover > ul {
 		display: block;
 	}
-@media screen and (device-width: 360px) and (orientation: portrait) and (min-resolution: 3dppx) {
+@media screen and (min-device-width: 360px) and (orientation: portrait) and (min-resolution: 2dppx) {
 	body {
 		font-size: 16px;
 		width:100%;
@@ -231,7 +231,7 @@ header {
 			border: none;
 		}
 }
-@media screen and (device-width: 640px) and (orientation: landscape) and (min-resolution: 3dppx) {
+@media screen and (min-device-width: 640px) and (orientation: landscape) and (min-resolution: 2dppx) {
 	body {
 		font-size: 24px;
 		width:100%;
@@ -327,6 +327,7 @@ header {
 			border: none;
 		}
 }
+
 @media screen and (max-width:800px) and (min-width:500px) and (min-device-width:600px) and (max-resolution:1dppx) {
 	body {
 		font-size: 12px;
