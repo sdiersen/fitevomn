@@ -36,6 +36,10 @@ $(document).ready(function() {
 		console.log("Start Y: " + startY + "px\n");		
 	});
 
+	nav.addEventListener('touchmove', function(e) {
+		e.preventDefault();
+	});
+
 	nav.addEventListener('touchend', function(e) {
 		var touchobj = e.changedTouches[0];
 		distY = Math.abs(startY - parseInt(touchobj.clientY));
