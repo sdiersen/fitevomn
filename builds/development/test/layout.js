@@ -9,9 +9,45 @@ $(document).ready(function() {
 			setNextEvent();
 		}, 5000);
 	};
+	var nav = document.getElementById('theNav'); 
+	var navMonti = document.getElementById('navMonti');
+	var boxing = document.getElementById('boxingClub');
+	var startY = 0;
+	var startX = 0;
+	var distX = 0;
+	var distY = 0;
 	timer();
 	//$("#testvalue").html(number_of_events);
 	//$("#myCarouselActiveItem").html(current_event);
+	// window.addEventListener('touchstart', function onFirstTouch() {
+	// 	document.body.classList.add('user-is-touching');
+	// 	window.removeEventListener('touchstart', onFirstTouch, false);
+	// }, false);
+
+	var rect = navMonti.getBoundingClientRect();
+	console.log(rect.top, rect.right, rect.bottom, rect.left);
+	var rect1 = boxing.getBoundingClientRect();
+		console.log(rect1.top, rect1.right, rect1.bottom, rect1.left);
+	nav.addEventListener('touchstart', function(e) {
+		var touchobj = e.changedTouches[0];
+		startX = parseInt(touchobj.clientX);
+		startY = parseInt(touchobj.clientY);
+		console.log("Start X: " + startX + "px\n");
+		console.log("Start Y: " + startY + "px\n");		
+	});
+
+	nav.addEventListener('touchend', function(e) {
+		var touchobj = e.changedTouches[0];
+		distY = Math.abs(startY - parseInt(touchobj.clientY));
+		console.log("Distance in Y: " + distY + "px\n");
+		if (distY > 50) {
+			var rect = navMonti.getBoundingClientRect();
+			if (startX <= rect.right && startX >= rect.left && startY <= rect.bottom && startY >= rect.top) {
+				document.getElementById('testMonti').style.display = "block";
+			}
+		}
+	});
+
 	$("div.myCarouselNextItem").click(function() { 
 		setNextEvent();
 		if (timer_on) {
