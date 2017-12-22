@@ -29,6 +29,7 @@ $(document).ready(function() {
 	var rect1 = boxing.getBoundingClientRect();
 		console.log(rect1.top, rect1.right, rect1.bottom, rect1.left);
 	nav.addEventListener('touchstart', function(e) {
+		e.preventDefault();
 		var touchobj = e.changedTouches[0];
 		startX = parseInt(touchobj.clientX);
 		startY = parseInt(touchobj.clientY);
@@ -41,6 +42,7 @@ $(document).ready(function() {
 	});
 
 	nav.addEventListener('touchend', function(e) {
+		e.preventDefault();
 		var touchobj = e.changedTouches[0];
 		distY = Math.abs(startY - parseInt(touchobj.clientY));
 		console.log("Distance in Y: " + distY + "px\n");
