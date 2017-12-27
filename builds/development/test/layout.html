@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="layout.css">
     </head>
     <body>
@@ -13,22 +13,22 @@
                 </div>
                 <div class="myCarousel">
 					<div class="myCarouselPrev">
-						<div class="myCarouselPrevItem"><img class="carouselMoveSVG" src="../images/svg/ic_skip_previous_white_24px.svg"></div><!-- &#x2190; -->
+						<div class="myCarouselPrevItem"><span class="glyphicon glyphicon-chevron-left"></span></div>
 					</div>
 					<div class="myCarouselNext">
-						<div class="myCarouselNextItem"><img class="carouselMoveSVG" src="../images/svg/ic_skip_next_white_24px.svg"></div><!-- &#x2192; -->
+						<div class="myCarouselNextItem"><span class="glyphicon glyphicon-chevron-right"></div>
 					</div>
 						<div class="myCarouselListContainer">
 							<ul id="currentEvents" class="myCarouselList">
-								<li class="myCarouselItem backgroundOne" data-carousel-item-number="1"><img src="../images/banner/group-fitness-banner-1a.jpg"></li>
-								<li class="myCarouselItem backgroundTwo" data-carousel-item-number="2"><img src="../images/banner/group-fitness-banner-1b.jpg"></li>
-								<li class="myCarouselItem backgroundThree" id="myCarouselActiveItem" data-carousel-item-number="3"><img src="../images/banner/group-fitness-banner-1c.jpg"></li>
-								<li class="myCarouselItem backgroundFour" data-carousel-item-number="4"><img src="../images/banner/group-fitness-banner-1d.jpg"></li>
+								<li class="myCarouselItem" data-carousel-item-number="1"><img src="../images/banner/group-fitness-banner-1a.jpg"></li>
+								<li class="myCarouselItem" data-carousel-item-number="2"><img src="../images/banner/group-fitness-banner-1b.jpg"></li>
+								<li class="myCarouselItem" id="myCarouselActiveItem" data-carousel-item-number="3"><img src="../images/banner/group-fitness-banner-1c.jpg"></li>
+								<li class="myCarouselItem" data-carousel-item-number="4"><img src="../images/banner/group-fitness-banner-1d.jpg"></li>
 							</ul>
 						</div>
-						<div class="myCarouselThumbnails">
+						<div class="myCarouselThumbnails hidden">
 							<ul class="myCarouselListThumb">
-								<li class="material-icons myCarouselItemThumb" data-carousel-thumb-item-number="0">pause</li>
+								<li class="glyphicon glyphicon-pause myCarouselThumbPausePlay" data-carousel-thumb-item-number="0"></li>
 								<li class="myCarouselItemThumb" data-carousel-thumb-item-number="1"><img src="../images/banner/group-fitness-banner-1a.jpg"></li>
 								<li class="myCarouselItemThumb" data-carousel-thumb-item-number="2"><img src="../images/banner/group-fitness-banner-1b.jpg"></li>
 								<li class="myCarouselItemThumb" data-carousel-thumb-item-number="3" id="myCarouselActiveItemThumb"><img src="../images/banner/group-fitness-banner-1c.jpg"></li>
@@ -49,7 +49,7 @@
 						</ul>
 					</li>
 					<li>
-						<a aria-haspopup="true" href="#">Buffalo</a>
+						<a aria-haspopup="true" href="#">Buffalo <span class="glyphicon glyphicon-menu-down"></span></a>
 						<ul>
 							<li><a href="http://www.fitevomn.com/buffalo-memberships">Memberships</a></li>
 							<li><a href="http://www.fitevomn.com/buffalo-group-fitness">Group Fitness</a></li>
@@ -60,13 +60,13 @@
 						</ul>
 					</li>
 					<li>
-						<a aria-haspopup="true" href="#" id="navMonti">Monticello</a>
+						<a aria-haspopup="true" href="#" id="navMonti">Monticello <span class="glyphicon glyphicon-menu-down"></span></a>
 						<ul id="testMonti">
 							<li><a href="#">Memberships</a></li>
 							<li><a href="#">Group Fitness</a></li>
 							<li><a href="#">Yoga</a></li>
 							<li>
-								<a aria-haspopup="true" href="#" id="boxingClub">Boxing Club</a><!-- http://www.fitevomn.com/boxing-club -->
+								<a aria-haspopup="true" href="#" id="boxingClub">Boxing Club  <span class="glyphicon glyphicon-menu-right"></span></a><!-- http://www.fitevomn.com/boxing-club -->
 								<ul id="boxingSub">
 									<li><a href="http://www.fitevomn.com/boxing-club-descriptions">About Boxing Club</a></li>
 									<li><a href="#">Rock Steady Boxing</a></li>
@@ -77,7 +77,7 @@
 						</ul>
 					</li>	
 					<li>
-						<a aria-haspopup="true" href="#">Zimmerman</a>
+						<a aria-haspopup="true" href="#">Zimmerman <span class="glyphicon glyphicon-menu-down"></span></a>
 						<ul>
 							<li><a href="#">Memberships</a></li>
 							<li><a href="#">Group Fitness</a></li>
@@ -95,5 +95,6 @@
         </footer>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="layout.js"></script>
 </html>

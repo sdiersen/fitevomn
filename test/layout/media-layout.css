@@ -12,7 +12,7 @@
 		.headerLogoContainer {
 			width:100%;
 			position:absolute;
-			background-color: black;
+			
 		}
 		.headerLogo {
 			position:absolute;
@@ -30,8 +30,17 @@
 		}
 		.myCarouselPrevItem, .myCarouselNextItem {
 			position: absolute;
-			width:3em;
-			height:3em;		
+			/*width:3em;
+			height:3em;	*/	
+		}
+		.myCarouselPrevItem,
+		.myCarouselNextItem {
+			color:#f60;
+			opacity: .25;
+		}
+			.myCarouselPrevItem:hover,
+			.myCarouselNextItem:hover {
+			opacity: 1;
 		}
 		img.carouselMoveSVG {			
 			width:100%;
@@ -86,18 +95,14 @@
 			text-align: center;
 		}
 		li.myCarouselItemThumb {
-			color: red;
 			font-size: 1em;
 		}
 		li.myCarouselItemThumb:hover,
 		div.myCarouselPrevItem:hover,
-		div.myCarouselNextItem:hover {
+		div.myCarouselNextItem:hover,
+		li.myCarouselThumbPausePlay:hover {
 			cursor: pointer;
 		}
-		.backgroundOne { background-color: red; }
-		.backgroundTwo { background-color: blue; }
-		.backgroundThree { background-color: yellow; }
-		.backgroundFour { background-color: purple; }
 
 	/* NAVIGATION */
 		nav {
@@ -112,8 +117,8 @@
 				font-size: .8em;
 		}
 		nav ul li {
-			background-color: rgba(0,0,0,.65);
-			/*border:1px solid #F60;
+			/*background-color: rgba(0,0,0,.65);
+			border:1px solid #F60;
 			border-radius: 15px;
 			border-collapse: collapse;*/
 		}
@@ -123,24 +128,27 @@
 			margin:0px;
 		}
 		nav ul li a {
-			display: inline-block;;
-			color:#F60;
+			display: inline-block;
 			text-decoration: none;
 			position: relative;
 			white-space: nowrap;
 		}
-		nav ul li a:visited {
-			color: #F60;
-		}
 		nav ul li:hover {
-			background-color: #2B0306;
+			background-color: rgba(255,102,0,0.85);
+			border-radius: 8px;
+		}
+		nav > ul {
+			float: right;
 		}
 		nav > ul > li {
 			float: left;
 		}
+		
 		nav ul ul {
 			position: absolute;
 			top:100%;
+			background-color: rgba(255,102,0,0.65);
+			border-radius: 8px;
 			display:none;
 		}
 		nav ul ul li {
@@ -151,6 +159,22 @@
 		}
 		nav ul li:hover > ul {
 			display: block;
+		}
+		nav > ul > li > a {
+			color: black;
+			font-weight: 700;
+		}
+		nav > ul > li > a:hover {
+			color: black;
+		}
+		nav a {
+			color: white;
+		}
+		nav a:link {
+			text-decoration: none;
+		}
+		nav a:hover {
+			color: white;
 		}
 
 
@@ -168,7 +192,7 @@
 			height: 50px;
 			top: 0px;
 			left: 0px;
-			background-color: black;
+			
 
 		}
 		.headerLogo {
@@ -347,6 +371,95 @@
 			border: none;
 		}
 }
+@media screen and (max-width:500px) and (max-resolution:1dppx) 
+	/*Menu needs to become a hamburger menu with some sort of slide out to full menu*/
+	{
+	body {
+		font-size: 12px;
+		width:500px;
+	}
+	header {
+		height: 400px;
+	}
+
+	/* HEADER */
+		.headerLogoContainer {
+			height: 40px;
+			top: 0px;
+			left: 0px;
+			width:100%;
+		}
+		.headerLogo {
+			width: inherit;
+		}
+		.logoImage {
+			margin: 0 auto;
+			height: 38px;
+		}
+	
+	/* CAROUSEL */
+		.myCarousel {
+			width:100%;
+			height: 345px;
+			top: 40px;
+			left: 0px;
+		}
+		.myCarouselPrev {
+			top: 0px;
+			left: 0px;
+			width:0px;
+			z-index: 1;
+		}
+		.myCarouselNext {
+			top: 0px;
+			left: 450px;
+			width: 0px;
+			z-index: 1;
+		}
+		.myCarouselPrevItem, .myCarouselNextItem {
+			top: 126px;
+			left: 0px;
+		}
+		.myCarouselListContainer {
+			top: 0px;
+			left: 0px;
+			width: 500px;
+			height: 280px;
+			z-index: 0;
+		}
+		.myCarouselItem {
+			top: 0px;
+			left: 0px;
+		}
+		.myCarouselThumbnails {
+			top: 280px;
+			left: 0px;
+			height: 30px;
+			width: 500px;
+		}
+		li.myCarouselItemThumb {
+			font-size: 1.2em;
+			width: 2.2em;
+			margin: 5px 30px;
+		}
+
+	/* NAVIGATION */
+		nav {
+			top: 40px;
+			width:100%;
+			font-size: 16px;
+		}
+		nav > ul {
+			float: right;
+		}
+		nav ul li a {
+			padding:5px 4px;
+		}
+		
+		nav ul ul ul {
+			top: 0px;
+		}
+	}
 @media screen and (max-width:800px) and (min-width:500px) and (min-device-width:600px) and (max-resolution:1dppx) {
 	body {
 		font-size: 12px;
@@ -419,10 +532,12 @@
 	/* NAVIGATION */
 		nav {
 			top: 8px;
-			left: 44%;
+			/*left: 40%;*/
+			width:500px;
+			font-size: 1.1em;
 		}
 		nav ul li a {
-			padding:5px 6px;
+			padding:5px 5px;
 		}
 		
 		nav ul ul ul {
@@ -435,7 +550,7 @@
 		width:800px;
 	}
 	header {
-		height: 400px;
+		height: 535px;
 	}
 
 	/* HEADER */
@@ -455,19 +570,19 @@
 	/* CAROUSEL */
 		.myCarousel {
 			width:100%;
-			height: 345px;
+			height: 480px;
 			top: 55px;
 			left: 0px;
 		}
 		.myCarouselPrev {
 			top: 0px;
 			left: 0px;
-			width:15%;
+			width: 80px;
 		}
 		.myCarouselNext {
 			top: 0px;
-			left: 680px;
-			width: 15%;
+			left: 720px;
+			width: 80px;
 		}
 		.myCarouselPrevItem, .myCarouselNextItem {
 			top: 126px;
@@ -475,19 +590,19 @@
 		}
 		.myCarouselListContainer {
 			top: 0px;
-			left: 120px;
-			width: 560px;
-			height: 315px;
+			left: 0px;
+			width: 800px;
+			height: 450px;
 		}
 		.myCarouselItem {
 			top: 0px;
 			left: 0px;
 		}
 		.myCarouselThumbnails {
-			top: 315px;
-			left: 120px;
+			top: 450px;
+			left: 0px;
 			height: 30px;
-			width: 560px;
+			width: 800px;
 		}
 		li.myCarouselItemThumb {
 			font-size: 1.3em;
@@ -498,10 +613,12 @@
 	/* NAVIGATION */
 		nav {
 			top: 8px;
-			left: 44%;
+			/*left: 44%;*/
+			width: 800px;
+			font-size: 1.3em;
 		}
 		nav ul li a {
-			padding:10px 14px;
+			padding:10px 10px;
 		}
 		
 		nav ul ul ul {
@@ -514,7 +631,7 @@
 		width: 1000px;
 	}
 	header {
-		height: 600px;
+		height: 712px;
 	}
 	/* HEADER */
 		.headerLogoContainer {
@@ -540,29 +657,57 @@
 		.myCarouselPrev {
 			top: 0px;
 			left: 0px;
-			width:10%;
+			height: 510px;
+			width: 100px;
+			z-index: 1;
+			background-color: rgba(0,0,0,0);
 		}
 		.myCarouselNext {
+			height: 510px;
 			top: 0px;
 			left: 900px;
-			width: 10%;
+			width: 100px;
+			z-index: 1; /* for full width */
+			background-color: rgba(0,0,0,0); /* for full width */
 		}
 		.myCarouselPrevItem, .myCarouselNextItem {
-			top: 170px;
-			left: 20px;
+			/*top: 170px; for partial width 
+			left: 20px;  */
+			top: 263px; /* for full width */
+			left:20px; /* for full width */
+			
+		}
+		div.myCarouselPrevItem > span.glyphicon-chevron-left,
+		div.myCarouselNextItem > span.glyphicon-chevron-right {
+			font-size: 2em;
 		}
 		.myCarouselListContainer {
 			top: 0px;
+			/*
+			for partial width
 			left: 100px;
 			width: 800px;
-			height: 450px;
+			height: 450px;*/
+			/*
+			for full 1000 x 562 banner*/
+			left: 0px;
+			width: 1000px;
+			height: 562px;
 		}
 		.myCarouselItem {
 			top: 0px;
 			left: 0px;
 		}
 		.myCarouselThumbnails {
+			/*
+			for partial width
 			top: 450px;
+			left: 100px;
+			height: 60px;
+			width: 800px;*/
+			/*
+			for full 1000x562 banner*/
+			top: 562px;
 			left: 0px;
 			height: 60px;
 			width: 1000px;
@@ -572,15 +717,19 @@
 			width: 1.8em;
 			margin: 5px 30px;
 		}
+		li.myCarouselThumbPausePlay {
+			color:#f60;
+		}
 
 	/* NAVIGATION */
 		nav {
 			top: 25px;
-			left: 44%;
+			/*left: 42%;*/
+			width:1000px;			
 		}
 		
 		nav ul li a {
-			padding:7px 15px;
+			padding:7px 7px;
 		}
 		
 		nav ul ul ul {

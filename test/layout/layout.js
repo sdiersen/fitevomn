@@ -68,15 +68,17 @@ $(document).ready(function() {
 			timer();
 		}
 	});
-	$("li.material-icons.myCarouselItemThumb").click(function() {
+	$("li.myCarouselThumbPausePlay").click(function() {
 		if (timer_on) {
 			timer_on = false;
 			clearInterval(interval);
-			$(this).html("play_arrow");
+			$(this).removeClass("glyphicon-pause");
+			$(this).addClass("glyphicon-play");
 		} else {
 			timer_on = true;
 			timer();
-			$(this).html("pause");
+			$(this).removeClass("glyphicon-play");
+			$(this).addClass("glyphicon-pause");
 		}
 	})
 	$("li.myCarouselItemThumb").click(function () {
