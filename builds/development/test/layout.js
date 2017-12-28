@@ -91,6 +91,18 @@ $(document).ready(function() {
 		}
 	})
 
+	$(window).resize( function() {
+		var win = $(window).width();
+		
+		if(win < 500) {
+			$("#theNav").addClass("hidden");
+			$("#hamburgerMenu").removeClass("hidden");
+		} else {
+			$("#theNav").removeClass("hidden");
+			$("#hamburgerMenu").addClass("hidden");
+		}
+	});
+
 	function setEvent(event) {
 		if (event < 1 || event > number_of_events) {
 			return;

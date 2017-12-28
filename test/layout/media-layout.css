@@ -18,7 +18,12 @@
 			position:absolute;
 			color:#F60;
 		}
-
+		#hamburgerMenu {
+			position:absolute;
+			top:5px;
+			left:90%;
+		}
+		
 	/* CAROUSEL */
 		.myCarousel {
 			position: absolute;
@@ -26,7 +31,8 @@
 		.myCarouselPrev, .myCarouselNext {
 			position: absolute;
 			height: inherit;
-			background-color: black;
+			z-index: 1; /* for full width */
+			background-color: rgba(0,0,0,0); /* for full width */
 		}
 		.myCarouselPrevItem, .myCarouselNextItem {
 			position: absolute;
@@ -599,7 +605,7 @@
 			left: 0px;
 		}
 		.myCarouselThumbnails {
-			top: 450px;
+			top: 480px;
 			left: 0px;
 			height: 30px;
 			width: 800px;
@@ -659,16 +665,12 @@
 			left: 0px;
 			height: 510px;
 			width: 100px;
-			z-index: 1;
-			background-color: rgba(0,0,0,0);
 		}
 		.myCarouselNext {
 			height: 510px;
 			top: 0px;
 			left: 900px;
 			width: 100px;
-			z-index: 1; /* for full width */
-			background-color: rgba(0,0,0,0); /* for full width */
 		}
 		.myCarouselPrevItem, .myCarouselNextItem {
 			/*top: 170px; for partial width 

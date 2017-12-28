@@ -51,6 +51,12 @@ var cssTest = [
 var jsTest = [
 	'test/layout/*.js'
 ];
+var cssBoot = [
+	'test/bs-layout/*.css'
+];
+var jsBoot = [
+	'test/bs-layout/*.js'
+];
 
 
 gulp.task('js', function() {
@@ -62,6 +68,12 @@ gulp.task('js', function() {
 gulp.task('jsTest', function() {
 	gulp.src(jsTest)
 		.pipe(concat('layout.js'))
+		.pipe(gulp.dest('builds/development/test'))
+		.pipe(connect.reload())
+});
+gulp.task('jsBS', function() {
+	gulp.src(jsBoot)
+		.pipe(concat('bs-layout.js'))
 		.pipe(gulp.dest('builds/development/test'))
 		.pipe(connect.reload())
 });
@@ -99,6 +111,12 @@ gulp.task('css5', function() {
 		.pipe(gulp.dest('builds/development/test'))
 		.pipe(connect.reload())
 });
+gulp.task('cssBS', function() {
+	gulp.src(cssBoot)
+		.pipe(concat('bs-layout.css'))
+		.pipe(gulp.dest('builds/development/test'))
+		.pipe(connect.reload())
+});
 
 // gulp.task('compass', function() {
 // 	gulp.src(sassSources)
@@ -133,6 +151,8 @@ gulp.task('watch', function() {
 	gulp.watch(jsonSources, ['json']);
 	gulp.watch(cssTest, ['css5']);
 	gulp.watch(jsTest, ['jsTest']);
+	gulp.watch(cssBoot, ['cssBS']);
+	gulp.watch(jsBoot, ['jsBS']);
 });
 
 
@@ -143,4 +163,6 @@ gulp.task('connect', function() {
 	});
 })
 
-gulp.task('default', ['html','json', 'js', 'jsTest', 'css', 'css2', 'css3', 'css4', 'css5', 'connect', 'watch']);
+gulp.task('default', ['html','json', 'js', 'jsTest', 'jsBS',
+						 'css', 'css2', 'css3', 'css4', 
+						 'css5', 'cssBS', 'connect', 'watch']);
