@@ -21,10 +21,17 @@
 h1 {
 	color: red;
 }
-header {
-
+body {
+	background: #343a40;
+	max-width:1344px;
+	margin:0 auto;
 }
 
 .nav-link {
 	margin-right: 2rem;
+}
+
+footer {
+	color:rgba(255,255,255,.5);
+	text-align: center;
 }
