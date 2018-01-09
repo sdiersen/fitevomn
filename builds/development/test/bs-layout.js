@@ -23,4 +23,19 @@ $(document).ready(function() {
 		}
 	}
 
+	// $("a.dropdown-toggle").hover(function ()
+	// 	{
+	// 		$(this).css("color", "rgba(255,102,0,.8)");
+	// 		// $(this).parent().addClass("show");
+	// 		// $(this).next().addClass("show");
+	// 		$(this).dropdown("toggle");
+	// 	},
+	// 	function() {
+	// 		$(this).css("color", "rgba(255,255,255,.5");
+	// 		// $(this).parent().removeClass("show");
+	// 		// $(this).next().removeClass("show");
+	// 		// $(this).attr("aria-expanded", "false");
+	// 		$(this).dropdown("toggle");
+	// 	});
+
 });
