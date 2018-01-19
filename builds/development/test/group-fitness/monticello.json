@@ -1,54 +1,54 @@
 {
 	"Monday":[
-		{ "className":"SS Classic", "classInstructor":"Polly", "classTime":"9:00 AM" },
-		{ "className":"Barre Blend", "classInstructor":"Christine", "classTime":"9:00 AM" },
-		{ "className":"Step", "classInstructor":"Mary Ellen", "classTime":"10:15 AM" },
-		{ "className":"TBC", "classInstructor":"Kevin", "classTime":"5:30 PM" },
-		{ "className":"Hatha Yoga", "classInstructor":"Diane", "classTime":"6:00 PM" },
-		{ "className":"Strong by Zumba", "classInstructor":"Cheryl", "classTime":"6:30 PM" },
-		{ "className":"Guided Meditation", "classInstructor":"Diane", "classTime":"7:15 PM" }
+		{ "className":"SS Classic", "classInstructor":"Polly", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Barre Blend", "classInstructor":"Christine", "classTime":"9:00 AM", "classLink":"strength-classes.html#barreBlend" },
+		{ "className":"Step", "classInstructor":"Mary Ellen", "classTime":"10:15 AM", "classLink":"#" },
+		{ "className":"TBC", "classInstructor":"Kevin", "classTime":"5:30 PM", "classLink":"strength-classes.html#tbc" },
+		{ "className":"Hatha Yoga", "classInstructor":"Diane", "classTime":"6:00 PM", "classLink":"#" },
+		{ "className":"Strong by Zumba", "classInstructor":"Cheryl", "classTime":"6:30 PM", "classLink":"#" },
+		{ "className":"Guided Meditation", "classInstructor":"Diane", "classTime":"7:15 PM", "classLink":"#" }
 	],
 	"Tuesday":[
-		{ "className":"TBC", "classInstructor":"Cari", "classTime":"9:00 AM" },
-		{ "className":"Rejuvenate", "classInstructor":"Karen", "classTime":"9:15 AM" },
-		{ "className":"Dance Jam", "classInstructor":"Cari", "classTime":"10:00 AM" },
-		{ "className":"Good Day Yoga", "classInstructor":"Diane", "classTime":"11:00 AM" },
-		{ "className":"POWER Flex", "classInstructor":"Tami", "classTime":"5:15 PM" },
-		{ "className":"AB Lab", "classInstructor":"Tami", "classTime":"6:30 PM" },
-		{ "className":"Gentle Flow", "classInstructor":"Kim", "classTime":"6:30 PM" }
+		{ "className":"TBC", "classInstructor":"Cari", "classTime":"9:00 AM", "classLink":"strength-classes.html#tbc" },
+		{ "className":"Rejuvenate", "classInstructor":"Karen", "classTime":"9:15 AM", "classLink":"#" },
+		{ "className":"Dance Jam", "classInstructor":"Cari", "classTime":"10:00 AM", "classLink":"#" },
+		{ "className":"Good Day Yoga", "classInstructor":"Diane", "classTime":"11:00 AM", "classLink":"#" },
+		{ "className":"POWER Flex", "classInstructor":"Tami", "classTime":"5:15 PM", "classLink":"strength-classes.html#powerFlex" },
+		{ "className":"AB Lab", "classInstructor":"Tami", "classTime":"6:30 PM", "classLink":"strength-classes.html#abLab" },
+		{ "className":"Gentle Flow", "classInstructor":"Kim", "classTime":"6:30 PM", "classLink":"#" }
 	],
 	"Wednesday":[
-		{ "className":"Silver & Fit", "classInstructor":"Michelle", "classTime":"9:00 AM" },
-		{ "className":"Core Pilates", "classInstructor":"Christine S", "classTime":"9:00 AM" },
-		{ "className":"Aqua Fit", "classInstructor":"Polly", "classTime":"9:00 AM" },
-		{ "className":"Strong by Zumba", "classInstructor":"Christine", "classTime":"10:00 AM" },
-		{ "className":"PiYo Live", "classInstructor":"Cheryl", "classTime":"5:30 PM" },
-		{ "className":"AB Lab", "classInstructor":"Lyssa/Marrio", "classTime":"5:30 PM" },
-		{ "className":"Zumba", "classInstructor":"Misty", "classTime":"6:30 PM" }
+		{ "className":"Silver & Fit", "classInstructor":"Michelle", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Core Pilates", "classInstructor":"Christine S", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Aqua Fit", "classInstructor":"Polly", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Strong by Zumba", "classInstructor":"Christine", "classTime":"10:00 AM", "classLink":"#" },
+		{ "className":"PiYo Live", "classInstructor":"Cheryl", "classTime":"5:30 PM", "classLink":"#" },
+		{ "className":"AB Lab", "classInstructor":"Lyssa/Marrio", "classTime":"5:30 PM", "classLink":"strength-classes.html#abLab" },
+		{ "className":"Zumba", "classInstructor":"Misty", "classTime":"6:30 PM", "classLink":"#" }
 	],
 	"Thursday":[
-		{ "className":"Guided Meditation", "classInstructor":"Chuck", "classTime":"8:00 AM" },
-		{ "className":"Pound", "classInstructor":"Julie", "classTime":"9:00 AM" },
-		{ "className":"Rejuvenate", "classInstructor":"Karen", "classTime":"9:15 AM" },
-		{ "className":"POWER Flex", "classInstructor":"Tami", "classTime":"9:45 AM" },
-		{ "className":"Good Day Yoga", "classInstructor":"Diane", "classTime":"11:00 AM" },
-		{ "className":"P90X Live", "classInstructor":"Kevin", "classTime":"5:30 PM" },
-		{ "className":"Zumba", "classInstructor":"Cheryl", "classTime":"6:30 PM" },
-		{ "className":"Restorative Yoga", "classInstructor":"Geneva", "classTime":"6:30 PM" }
+		{ "className":"Guided Meditation", "classInstructor":"Chuck", "classTime":"8:00 AM", "classLink":"#" },
+		{ "className":"Pound", "classInstructor":"Julie", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Rejuvenate", "classInstructor":"Karen", "classTime":"9:15 AM", "classLink":"#" },
+		{ "className":"POWER Flex", "classInstructor":"Tami", "classTime":"9:45 AM", "classLink":"strength-classes.html#powerFlex" },
+		{ "className":"Good Day Yoga", "classInstructor":"Diane", "classTime":"11:00 AM", "classLink":"#" },
+		{ "className":"P90X Live", "classInstructor":"Kevin", "classTime":"5:30 PM", "classLink":"strength-classes.html#p90x" },
+		{ "className":"Zumba", "classInstructor":"Cheryl", "classTime":"6:30 PM", "classLink":"#" },
+		{ "className":"Restorative Yoga", "classInstructor":"Geneva", "classTime":"6:30 PM", "classLink":"#" }
 	],
 	"Friday":[
-		{ "className":"SS Clasic", "classInstructor":"Polly", "classTime":"8:30 AM" },
-		{ "className":"Step", "classInstructor":"Denise", "classTime":"9:30 AM" },
-		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"10:15 AM" }
+		{ "className":"SS Clasic", "classInstructor":"Polly", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Step", "classInstructor":"Denise", "classTime":"9:30 AM", "classLink":"#" },
+		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"10:15 AM", "classLink":"#" }
 	],
 	"Saturday":[
-		{ "className":"Core Pilates", "classInstructor":"Janna", "classTime":"8:00 AM" },
-		{ "className":"MIXX", "classInstructor":"Janna", "classTime":"9:00 AM" },
-		{ "className":"Zumba", "classInstructor":"Misty", "classTime":"10:00 AM" }
+		{ "className":"Core Pilates", "classInstructor":"Janna", "classTime":"8:00 AM", "classLink":"#" },
+		{ "className":"MIXX", "classInstructor":"Janna", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Zumba", "classInstructor":"Misty", "classTime":"10:00 AM", "classLink":"#" }
 	],
 	"Sunday":[
-		{ "className":"Barre Fusion", "classInstructor":"Janna", "classTime":"3:30 PM" },
-		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"4:30 PM" },
-		{ "className":"Jab Jams", "classInstructor":"Lyssa", "classTime":"5:15 PM" }
+		{ "className":"Barre Fusion", "classInstructor":"Janna", "classTime":"3:30 PM", "classLink":"strength-classes.html#barreFusion" },
+		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"4:30 PM", "classLink":"#" },
+		{ "className":"Jab Jams", "classInstructor":"Lyssa", "classTime":"5:15 PM", "classLink":"#" }
 	]
 }

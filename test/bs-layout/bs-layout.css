@@ -15,7 +15,7 @@
 	-o-background-size: cover;
 	background-size: cover;
 }*/
-
+@import url('https://fonts.googleapis.com/css?family=Muli');
 /* My Bootstrap rewrites and add ons */
 
 h1 {
@@ -42,4 +42,79 @@ a.nav-link {
 
 .table {
 	color: rgba(255,102,0,.8);
+}
+
+.classCell {
+	text-align: center;
+}
+
+.classCell:hover {
+	background-color: rgba(255,102,0,0.2);
+}
+tr#weekdayHeaders th {
+	text-align: center;
+}
+.obscure {
+	background-color: rgba(150,150,150,0.4);
+}
+
+body {
+	font-family:'Muli';
+}
+ul,li {
+	list-style-type:none;
+}
+div.bigContainerCL1	{
+
+}
+div.bigContainerCL2 {
+		  
+	  }
+div.containerCL {
+	display:flex;
+	flex-wrap:wrap;
+}
+div.containedCL {
+	flex:1 1 auto;
+}
+a:link {
+	text-decoration:none;
+	color:black;
+	line-height:1.25em;
+}
+a:visited {
+	color:black;
+}
+a:hover {
+	background:#dddddd;
+	border-radius:.5em;
+	color:#ff6600;
+}
+monti {
+	background:#dddddd;
+	font-weight: bold;
+	font-family:Courier;
+	color:green;
+}
+buffalo {
+	background:#dddddd;
+	font-weight: bold;
+	font-family:Courier;
+	color:purple;
+}
+zimmer {
+	background:#dddddd;
+	font-weight:bold;
+	font-family:Courier;
+	color:blue;
+}
+h1 {
+	font-size:3em;
+	color:#ff6600;
+	text-align:center;
+}
+h2 {
+	font-size:2em;
+	color:#ff6600;
+	text-align:center;
 }
