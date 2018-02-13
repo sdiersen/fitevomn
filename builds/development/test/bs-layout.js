@@ -1,8 +1,9 @@
 $(document).ready(function() { 
 	var width = $(window).width();
-
+	getClassSchedule("zimmerman.json");
 	//Start JQuery AJAX request for gx classes
-	$.getJSON("monticello.json", function(data) {
+	function getClassSchedule(locationFile) {
+		$.getJSON(locationFile, function(data) {
 		console.log(data); 
 		console.log(data.Monday.length);
 		console.log(data.Monday[0].className);
@@ -109,6 +110,8 @@ $(document).ready(function() {
 		$("#classInject").html(output);
 		greyDays();
 	});
+	}
+	
 
 	function greyDays() {
 		var date = new Date();

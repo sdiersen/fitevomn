@@ -1,0 +1,80 @@
+{
+	"Monday":[
+		{ "className":"Ride & Shine", "classInstructor":"Kris", "classTime":"5:15 AM", "classLink":"#" },
+		{ "className":"Aqua Fit", "classInstructor":"Christine", "classTime":"7:00 AM", "classLink":"#" },
+		{ "className":"Yoga Sculpt", "classInstructor":"Christine S.", "classTime":"8:10 AM", "classLink":"#" },
+		{ "className":"Ride & RIP", "classInstructor":"Tina", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Aqua Zumba", "classInstructor":"Angie", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Body Pump", "classInstructor":"Janet", "classTime":"9:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Golden Yoga", "classInstructor":"Michelle", "classTime":"10:30 AM", "classLink":"#" },
+		{ "className":"Noon Ride 45", "classInstructor":"Randy", "classTime":"12:00 PM", "classLink":"#" },
+		{ "className":"SS Classic", "classInstructor":"Polly", "classTime":"1:00 PM", "classLink":"#" },
+		{ "className":"Step", "classInstructor":"Cari", "classTime":"5:15 PM", "classLink":"#" },
+		{ "className":"Body Pump", "classInstructor":"Babs", "classTime":"6:15 PM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Rumble Exp", "classInstructor":"Babs", "classTime":"7:15 PM", "classLink":"#"}
+	], 
+	"Tuesday":[
+		{ "className":"Body Pump", "classInstructor":"Susie", "classTime":"5:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Silver & Fit", "classInstructor":"Polly", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Deep Water", "classInstructor":"Michelle", "classTime":"9:30 AM", "classLink":"#" },
+		{ "className":"Step", "classInstructor":"Mary Ellen", "classTime":"9:30 AM", "classLink":"#" },
+		{ "className":"Hatha Yoga", "classInstructor":"Mary Ellen", "classTime":"10:15 AM", "classLink":"#" },
+		{ "className":"SS Cardio Fit", "classInstructor":"Kristin", "classTime":"10:30 AM", "classLink":"#" },
+		{ "className":"Body Pump Exp", "classInstructor":"Michelle", "classTime":"12:00 PM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Barre Blend", "classInstructor":"Angie", "classTime":"4:30 PM", "classLink":"strength-classes.html#barreBlend" },
+		{ "className":"RIPPED", "classInstructor":"Babs", "classTime":"5:15 PM", "classLink":"#" },
+		{ "className":"Ride & Recharge", "classInstructor":"Tom", "classTime":"6:00 PM", "classLink":"#" },
+		{ "className":"Zumba", "classInstructor":"Cheryl", "classTime":"6:15 PM", "classLink":"#" },
+		{ "className":"PiYo Live", "classInstructor":"Cheryl", "classTime":"7:15 PM", "classLink":"#" }
+	],
+	"Wednesday":[
+		{ "className":"Ultimate Ride", "classInstructor":"Nancy", "classTime":"5:15 AM", "classLink":"#" },
+		{ "className":"Aqua Fit", "classInstructor":"Jen", "classTime":"7:00 AM", "classLink":"#" },
+		{ "className":"Zumba", "classInstructor":"Angie", "classTime":"8:15 AM", "classLink":"#" },
+		{ "className":"Ride On", "classInstructor":"Tina", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Aqua Synergy", "classInstructor":"Christine St.", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Body Pump", "classInstructor":"Janet", "classTime":"9:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Golden Yoga", "classInstructor":"Michelle", "classTime":"10:30 AM", "classLink":"#" },
+		{ "className":"Noon Ride 45", "classInstructor":"Randy", "classTime":"12:00 PM", "classLink":"#" },
+		{ "className":"SS Classic", "classInstructor":"Polly", "classTime":"1:00 PM", "classLink":"#" },
+		{ "className":"PiYo Live 45", "classInstructor":"Angie", "classTime":"4:30 PM", "classLink":"#" },
+		{ "className":"Rumble Exp", "classInstructor":"Babs", "classTime":"5:15 PM", "classLink":"#"},
+		{ "className":"Body Pump", "classInstructor":"Babs", "classTime":"6:15 PM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Cycle 360", "classInstructor":"Susie", "classTime":"6:30 PM", "classLink":"#" }
+	],
+	"Thursday":[
+		{ "className":"Body Pump", "classInstructor":"Babs/Kathy", "classTime":"5:10 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Silver & Fit", "classInstructor":"Polly", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Core X", "classInstructor":"Cari", "classTime":"8:30 AM", "classLink":"strength-classes.html#coreX" },
+		{ "className":"Deep Water", "classInstructor":"Michelle", "classTime":"9:30 AM", "classLink":"#" },
+		{ "className":"TBC", "classInstructor":"Cari", "classTime":"9:30 AM", "classLink":"strength-classes.html#tbc" },
+		{ "className":"PiYo Live", "classInstructor":"Cheryl", "classTime":"10:15 AM", "classLink":"#" },
+		{ "className":"Silver & Fit", "classInstructor":"Angie", "classTime":"10:30 AM", "classLink":"#" },
+		{ "className":"Body Pump Exp", "classInstructor":"Michelle", "classTime":"12:00 PM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Tabata", "classInstructor":"Tina", "classTime":"4:30 PM", "classLink":"#" },
+		{ "className":"MIXX", "classInstructor":"Jen", "classTime":"5:30 PM", "classLink":"#" },
+		{ "className":"Hatha Yoga", "classInstructor":"Kris", "classTime":"6:30 PM", "classLink":"#" }		
+	],
+	"Friday":[
+		{ "className":"Power Yoga", "classInstructor":"Michelle", "classTime":"5:15 AM", "classLink":"#" },
+		{ "className":"Aqua Fit", "classInstructor":"Christine St.", "classTime":"7:00 AM", "classLink":"#" },
+		{ "className":"Tabata", "classInstructor":"Susie", "classTime":"8:30 AM", "classLink":"#" },
+		{ "className":"Aqua Zumba", "classInstructor":"Angie", "classTime":"9:00 AM", "classLink":"#" },
+		{ "className":"Body Pump", "classInstructor":"Susie", "classTime":"9:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Be Fit", "classInstructor":"Susie", "classTime":"10:30 AM", "classLink":"#" },
+		{ "className":"SS Classic", "classInstructor":"Kris", "classTime":"1:00 PM", "classLink":"#" },
+		{ "className":"Strong", "classInstructor":"Eryn", "classTime":"4:30 PM", "classLink":"#" }			
+		
+	],
+	"Saturday":[
+		{ "className":"Body Pump", "classInstructor":"Janet/Babs", "classTime":"7:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Pound", "classInstructor":"Julie", "classTime":"8:15 AM", "classLink":"#" },
+		{ "className":"Body Pump", "classInstructor":"Michelle/Kate/Kathy", "classTime":"9:15 AM", "classLink":"strength-classes.html#bodyPump" },
+		{ "className":"Aqua Fit", "classInstructor":"Dara", "classTime":"9:15 AM", "classLink":"#" }		
+	],
+	"Sunday":[
+		{ "className":"Barre Fusion", "classInstructor":"Janna", "classTime":"4:30 PM", "classLink":"strength-classes.html#barreFusion" },
+		{ "className":"Zumba Toning", "classInstructor":"Cheryl", "classTime":"5:30 PM", "classLink":"#" },
+		{ "className":"Zumba", "classInstructor":"Cheryl", "classTime":"6:30 PM", "classLink":"#" }
+	]
+}
