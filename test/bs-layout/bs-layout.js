@@ -2,40 +2,40 @@ $(document).ready(function() {
 	var width = $(window).width();
 	var location = "buffalo";
 	var classType = "all";
-	var instructor = "any";
+	var instructor = "Any";
+	// var monticelloJSON = [];
+	// var buffaloJSON = [];
+	// var zimmermanJSON = [];
+	// var instructorJSON;
+
+	// getLocationJSON();
+	// getInstructorJSON();
+	
 
 	loadInstructors();
 	getClassSchedule();
 
-	$("#inputGroupSelect00").change(function() {
-		location = $(this).val();
-		getClassSchedule();
-	});
-	$("#inputGroupSelect01").change(function() {
-		classType = $(this).val();
-		getClassSchedule()
-	})
 
 	function getClassMatches(day) {
 		var results = [];
 		var counter = 0;
 		while (hasMoreClasses(counter, day.length)) {
-			if ((classType === "all" || classType === day[counter].classType) && (instructor === "any" || instructor === day[counter].classInstructor)) {
+			if ((classType === "all" || classType === day[counter].classType) && (instructor === "Any" || instructor === day[counter].classInstructor)) {
 				results.push(day[counter]);
 			}
 			counter++;
 		}
 		return results;
 	}
+
+
 	//Start JQuery AJAX request for gx classes
 	function getClassSchedule() {
-		var locationFile = location + ".json";
-		$.getJSON(locationFile, function(data) {
-
+		
+		$.getJSON(location + ".json", function(data) {
 
 			var current = 0;
 			var output;
-
 			var monday = getClassMatches(data.Monday);
 			var tuesday = getClassMatches(data.Tuesday);
 			var wednesday = getClassMatches(data.Wednesday);
@@ -45,6 +45,10 @@ $(document).ready(function() {
 			var sunday = getClassMatches(data.Sunday);
 
 			var largest = mostClasses(monday.length, tuesday.length, wednesday.length, thursday.length, friday.length, saturday.length, sunday.length);
+
+			if (largest === 0) {
+				output = "";
+			}
 
 			while (hasMoreClasses(current,largest)) {
 				output += "<tr>";
@@ -142,9 +146,11 @@ $(document).ready(function() {
 				output += "</tr>";
 				current++;
 			}
+
 			$("#classInject").html(output);
 			greyDays();
 		});
+		
 	}
 	
 
@@ -225,22 +231,41 @@ $(document).ready(function() {
 	}
 
 	function loadInstructors() {
-		var output = "<div class=\"input-group-prepend\"><label class=\"input-group-text\" for=\"inputGroupSelect02\">Instructors:</label></div>";
-		output += "<select class=\"custom-select\" id=\"inputGroupSelect02\">";
-		output += "<option value=\"any\" selected>Any</option>";
+		
 		$.getJSON("instructors.json", function(data) {
 			var current = 0;
+			var output;
 			while(current < data.instructor.length) {
-				// output += "<option value=\"";
-				// output += data.instructor[current];
-				// output += "\">";
-				// output += data.instructor[current];
-				// output += "</option>";
-				output += "hello ";
-				++current;
+				if (data.instructor[current].club === location) {
+					output += "<option value=\"";
+					output += data.instructor[current].name;
+					output += "\"";
+					if (data.instructor[current].name === instructor) {
+						output += " selected";
+					}
+					output += ">";
+					output += data.instructor[current].name;
+					output += "</option>";
+				}
+				current++;
 			}
-			output += "</select>";
+			$("#inputGroupSelect02").html(output);
 		});
-		$("#instructorsSelect").html(output);
+		
 	}
+
+	$("#inputGroupSelect00").change(function() {
+		location = $(this).val();
+		loadInstructors();
+		getClassSchedule();
+	});
+	$("#inputGroupSelect01").change(function() {
+		classType = $(this).val();
+		getClassSchedule();
+	});
+	$("#inputGroupSelect02").change(function() {
+		instructor = $(this).val();
+		getClassSchedule();
+	});
+
 });

@@ -1,12 +1,12 @@
 {
 	"Monday":[
-		{ "className":"Silver & Fit", "classInstructor":"Polly", "classTime":"7:45 AM", "classLink":"#", "classType":"activeOlderAdults" },
+		{ "className":"Silver & Fit", "classInstructor":"Polly Smith", "classTime":"7:45 AM", "classLink":"#", "classType":"activeOlderAdults" },
 		{ "className":"Aqua Fit", "classInstructor":"Anne", "classTime":"9:00 AM", "classLink":"#", "classType":"aquatics" },
 		{ "className":"POWER Flex", "classInstructor":"Tami", "classTime":"9:00 AM", "classLink":"strength-classes.html#powerFlex", "classType":"strength" },
 		{ "className":"POWER Flex", "classInstructor":"Lori", "classTime":"6:00 PM", "classLink":"strength-classes.html#powerFlex", "classType":"strength" }		
 	],
 	"Tuesday":[
-		{ "className":"Step", "classInstructor":"Polly", "classTime":"7:45 AM", "classLink":"#", "classType":"cardio" },
+		{ "className":"Step", "classInstructor":"Polly Smith", "classTime":"7:45 AM", "classLink":"#", "classType":"cardio" },
 		{ "className":"P90X Live", "classInstructor":"Tami", "classTime":"9:00 AM", "classLink":"strength-classes.html#p90x", "classType":"strength" },
 		{ "className":"SS Classic", "classInstructor":"Tami", "classTime":"10:15 AM", "classLink":"#", "classType":"activeOlderAdults" },
 		{ "className":"Hatha Yoga", "classInstructor":"Polly Cyr", "classTime":"5:00 PM", "classLink":"#", "classType":"mindAndBody" },
@@ -15,7 +15,7 @@
 		
 	],
 	"Wednesday":[
-		{ "className":"MIXX", "classInstructor":"Polly", "classTime":"7:15 AM", "classLink":"#", "classType":"cardio" },
+		{ "className":"MIXX", "classInstructor":"Polly Smith", "classTime":"7:15 AM", "classLink":"#", "classType":"cardio" },
 		{ "className":"Aqua Fit", "classInstructor":"Kim", "classTime":"9:00 AM", "classLink":"#", "classType":"aquatics" },
 		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"9:00 AM", "classLink":"#", "classType":"mindAndBody" },
 		{ "className":"Gentle Yoga Relax", "classInstructor":"Kim", "classTime":"10:15 AM", "classLink":"#", "classType":"mindAndBody" },
@@ -23,7 +23,7 @@
 		{ "className":"Tabata", "classInstructor":"Lori", "classTime":"6:00 PM", "classLink":"#", "classType":"cardio" }
 	],
 	"Thursday":[
-		{ "className":"Line Dancing", "classInstructor":"Polly", "classTime":"7:45 AM", "classLink":"#", "classType":"dance" },
+		{ "className":"Line Dancing", "classInstructor":"Polly Smith", "classTime":"7:45 AM", "classLink":"#", "classType":"dance" },
 		{ "className":"POWER Flex", "classInstructor":"Lori", "classTime":"9:00 AM", "classLink":"strength-classes.html#powerFlex", "classType":"strength" },
 		{ "className":"SS Classic", "classInstructor":"Lori", "classTime":"10:15 AM", "classLink":"#", "classType":"activeOlderAdults" },
 		{ "className":"TBC", "classInstructor":"Tami", "classTime":"5:00 PM", "classLink":"strength-classes.html#tbc", "classType":"strength" },
@@ -32,7 +32,7 @@
 		{ "className":"Gentle Yoga", "classInstructor":"Polly Smith", "classTime":"7:30 PM", "classLink":"#", "classType":"mindAndBody" }		
 	],
 	"Friday":[
-		{ "className":"TBC", "classInstructor":"Polly", "classTime":"7:45 AM", "classLink":"strength-classes.html#tbc", "classType":"strength" },
+		{ "className":"TBC", "classInstructor":"Polly Smith", "classTime":"7:45 AM", "classLink":"strength-classes.html#tbc", "classType":"strength" },
 		{ "className":"Aqua Fit", "classInstructor":"Kim", "classTime":"9:00 AM", "classLink":"#", "classType":"aquatics" },
 		{ "className":"MIXX", "classInstructor":"Lori", "classTime":"9:00 AM", "classLink":"#", "classType":"cardio" },
 		{ "className":"Gentle Yoga Strength", "classInstructor":"Kim", "classTime":"10:15 AM", "classLink":"#", "classType":"mindAndBody" }		

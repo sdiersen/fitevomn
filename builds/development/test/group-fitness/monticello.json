@@ -1,7 +1,7 @@
 {
 	"Monday":[
-		{ "className":"SS Classic", "classInstructor":"Polly", "classTime":"9:00 AM", "classLink":"#", "classType":"activeOlderAdults" },
-		{ "className":"Barre Blend", "classInstructor":"Christine", "classTime":"9:00 AM", "classLink":"strength-classes.html#barreBlend", "classType":"strength" },
+		{ "className":"SS Classic", "classInstructor":"Polly Cyr", "classTime":"9:00 AM", "classLink":"#", "classType":"activeOlderAdults" },
+		{ "className":"Barre Blend", "classInstructor":"Christine S.", "classTime":"9:00 AM", "classLink":"strength-classes.html#barreBlend", "classType":"strength" },
 		{ "className":"Step", "classInstructor":"Mary Ellen", "classTime":"10:15 AM", "classLink":"#", "classType":"cardio" },
 		{ "className":"TBC", "classInstructor":"Kevin", "classTime":"5:30 PM", "classLink":"strength-classes.html#tbc", "classType":"strength" },
 		{ "className":"Hatha Yoga", "classInstructor":"Diane", "classTime":"6:00 PM", "classLink":"#", "classType":"mindAndBody" },
@@ -19,9 +19,9 @@
 	],
 	"Wednesday":[
 		{ "className":"Silver & Fit", "classInstructor":"Michelle", "classTime":"9:00 AM", "classLink":"#", "classType":"activeOlderAdults" },
-		{ "className":"Core Pilates", "classInstructor":"Christine S", "classTime":"9:00 AM", "classLink":"#", "classType":"mindAndBody" },
-		{ "className":"Aqua Fit", "classInstructor":"Polly", "classTime":"9:00 AM", "classLink":"#", "classType":"aquatics" },
-		{ "className":"Strong by Zumba", "classInstructor":"Christine", "classTime":"10:00 AM", "classLink":"#", "classType":"dance" },
+		{ "className":"Core Pilates", "classInstructor":"Christine S.", "classTime":"9:00 AM", "classLink":"#", "classType":"mindAndBody" },
+		{ "className":"Aqua Fit", "classInstructor":"Polly Cyr", "classTime":"9:00 AM", "classLink":"#", "classType":"aquatics" },
+		{ "className":"Strong by Zumba", "classInstructor":"Christine S.", "classTime":"10:00 AM", "classLink":"#", "classType":"dance" },
 		{ "className":"PiYo Live", "classInstructor":"Cheryl", "classTime":"5:30 PM", "classLink":"#", "classType":"mindAndBody" },
 		{ "className":"AB Lab", "classInstructor":"Lyssa/Marrio", "classTime":"5:30 PM", "classLink":"strength-classes.html#abLab", "classType":"strength" },
 		{ "className":"Zumba", "classInstructor":"Misty", "classTime":"6:30 PM", "classLink":"#", "classType":"dance" }
@@ -37,7 +37,7 @@
 		{ "className":"Restorative Yoga", "classInstructor":"Geneva", "classTime":"6:30 PM", "classLink":"#", "classType":"mindAndBody" }
 	],
 	"Friday":[
-		{ "className":"SS Clasic", "classInstructor":"Polly", "classTime":"8:30 AM", "classLink":"#", "classType":"activeOlderAdults" },
+		{ "className":"SS Clasic", "classInstructor":"Polly Cyr", "classTime":"8:30 AM", "classLink":"#", "classType":"activeOlderAdults" },
 		{ "className":"Step", "classInstructor":"Denise", "classTime":"9:30 AM", "classLink":"#", "classType":"cardio" },
 		{ "className":"Hatha Yoga", "classInstructor":"Geneva", "classTime":"10:15 AM", "classLink":"#", "classType":"mindAndBody" }
 	],
