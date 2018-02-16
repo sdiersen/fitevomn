@@ -95,6 +95,71 @@
 			</div>
 		</nav>
 
+
+
+		<!-- Content -->
+		<!-- xs screen class schedules -->
+		<table class="table d-sm-none mx-auto">
+			<tr>
+				<td colspan="3" class="border-top-0">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="xsLocation">Location:</label>
+						</div>
+						<select class="custom-select" id="xsLocation">
+							<option value="buffalo" selected>Buffalo</option>
+							<option value="monticello">Monticello</option>
+							<option value="zimmerman">Zimmerman</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="border-top-0">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="xsClassType">Class Type:</label>
+						</div>
+						<select class="custom-select" id="xsClassType">
+							<option value="all" selected>All</option>
+							<option value="strength">Strength</option>
+							<option value="mindAndBody">Mind &amp; Body</option>
+							<option value="cardio">Cardio</option>
+							<option value="dance">Dance</option>
+							<option value="indoorCycling">Indoor Cycling</option>
+							<option value="activeOlderAdults">Active Older Adults</option>
+							<option value="aquatics">Aquatics</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="border-top-0">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="xsInstructors">Instructors:</label>
+						</div>
+						<select class="custom-select" id="xsInstructors">
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" id="xsDatePrevious" class="btn btn-primary">&lt;</button>
+				</td>
+				<td style="text-align:center">
+					<span class="align-middle" id="xsClassDay"></span>
+				</td>
+				<td style="text-align:right">
+					<button type="button" id="xsDateNext" class="btn btn-primary">&gt;</button>
+				</td>
+			</tr>
+		</table>
+		<table class="w-100 mx-auto" id="xsClassSchedule">
+
+		</table>
+		<!-- large or bigger screen class schedules -->
 		<table class="table d-none d-lg-table mx-auto">
 			<tr>
 				<td>
@@ -138,8 +203,6 @@
 				</td>
 			</tr>
 		</table>
-
-		<!-- Content -->
 		<table class="table d-none d-lg-table table-striped table-bordered table-hover mx-auto">
 			<thead>
 				<tr id="weekdayHeaders">

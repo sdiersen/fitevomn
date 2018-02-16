@@ -3,6 +3,11 @@ $(document).ready(function() {
 	var location = "buffalo";
 	var classType = "all";
 	var instructor = "Any";
+	var date = new Date();
+	var scheduleDay = date.getDay();
+	var scheduleLongDay = getLongDay(scheduleDay);
+
+	if ($(document).width() < 768) { setXSClassDay(); getClassScheduleDay(scheduleDay); }
 	// var monticelloJSON = [];
 	// var buffaloJSON = [];
 	// var zimmermanJSON = [];
@@ -152,6 +157,55 @@ $(document).ready(function() {
 		});
 		
 	}
+
+	function getClassScheduleDay(day) {
+		$.getJSON(location + ".json", function(data) {
+			var current = 0;
+			var output;
+			var sched;
+			switch (day) {
+				case 0:
+					sched = getClassMatches(data.Sunday);
+					break;
+				case 1:
+					sched = getClassMatches(data.Monday);
+					break;
+				case 2:
+					sched = getClassMatches(data.Tuesday);
+					break;
+				case 3:
+					sched = getClassMatches(data.Wednesday);
+					break;
+				case 4: 
+					sched = getClassMatches(data.Thursday);
+					break;
+				case 5:
+					sched = getClassMatches(data.Friday);
+					break;
+				case 6:
+					sched = getClassMatches(data.Saturday);
+					break;
+			}
+
+			while (current < sched.length) {
+				output += "<tr>"
+						+ "<td style=\"text-align:center\">"
+						+ sched[current].classTime 
+						+ "<br><a href=\"" 
+						+ sched[current].classLink 
+						+ "\">"
+						+ sched[current].className 
+						+ "</a><br>" 
+						+ sched[current].classInstructor 
+						+ "</td>"
+						+ "</tr>";
+				current++;
+			}
+			$("#xsClassSchedule").html(output);
+
+		});
+
+	}
 	
 
 	function greyDays() {
@@ -249,11 +303,67 @@ $(document).ready(function() {
 				}
 				current++;
 			}
-			$("#inputGroupSelect02").html(output);
+			if ($(window).width() < 768) {
+				$("#xsInstructors").html(output);
+			} else {
+				$("#inputGroupSelect02").html(output);
+			}
 		});
 		
 	}
 
+	function getLongDay(day) {
+		switch (day) {
+			case 0:
+				return "Sunday";
+			case 1:
+				return "Monday";
+			case 2:
+				return "Tuesday";
+			case 3:
+				return "Wednesday";
+			case 4:
+				return "Thursday";
+			case 5:
+				return "Friday";
+			case 6:
+				return "Saturday";
+		}
+	}
+	$(window).resize(function() {
+		loadInstructors();
+		getClassSchedule();
+		setXSClassDay();
+		getClassScheduleDay(scheduleDay);
+	});
+
+	$("#xsDatePrevious").click(function() {
+		scheduleDay = (scheduleDay + 6) % 7;
+		scheduleLongDay = getLongDay(scheduleDay);
+		setXSClassDay(); 
+		getClassScheduleDay(scheduleDay);
+	});
+
+	$("#xsDateNext").click(function() {
+		scheduleDay = (scheduleDay + 1) % 7;
+		scheduleLongDay = getLongDay(scheduleDay);
+		setXSClassDay();
+		getClassScheduleDay(scheduleDay);
+	});
+	$("#xsLocation").change(function() {
+		location = $(this).val();
+		loadInstructors();
+		getClassSchedule();
+	});
+	$("#xsInstructors").change(function() {
+		instructor = $(this).val();
+		loadInstructors();
+		getClassSchedule();
+	});
+	$("#xsClassType").change(function() {
+		classType = $(this).val();
+		getClassSchedule();
+	});
 	$("#inputGroupSelect00").change(function() {
 		location = $(this).val();
 		loadInstructors();
@@ -265,7 +375,11 @@ $(document).ready(function() {
 	});
 	$("#inputGroupSelect02").change(function() {
 		instructor = $(this).val();
+		loadInstructors();
 		getClassSchedule();
 	});
 
+	function setXSClassDay() {
+		$("#xsClassDay").html(scheduleLongDay);
+	}
 });
