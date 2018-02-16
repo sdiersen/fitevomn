@@ -1,115 +1,150 @@
 $(document).ready(function() { 
 	var width = $(window).width();
-	getClassSchedule("zimmerman.json");
-	//Start JQuery AJAX request for gx classes
-	function getClassSchedule(locationFile) {
-		$.getJSON(locationFile, function(data) {
-		console.log(data); 
-		console.log(data.Monday.length);
-		console.log(data.Monday[0].className);
+	var location = "buffalo";
+	var classType = "all";
+	var instructor = "any";
 
-		var largest = mostClasses(data);
-		var current = 0;
-		var output;
-		while (hasMoreClasses(current,largest)) {
-			output += "<tr>";
-			if (current < data.Monday.length) {
-				output += "<td class=\"classCell mondayCell\">"
-						 + data.Monday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Monday[current].classLink 
-						 + "\">"
-						 + data.Monday[current].className 
-						 + "</a><br>" 
-						 + data.Monday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Tuesday.length) {
-				output += "<td class=\"classCell tuesdayCell\">"
-						 + data.Tuesday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Tuesday[current].classLink 
-						 + "\">"
-						 + data.Tuesday[current].className 
-						 + "</a><br>" 
-						 + data.Tuesday[current].classInstructor 
-						 + "</td>";			
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Wednesday.length) {
-				output += "<td class=\"classCell wednesdayCell\">"
-						 + data.Wednesday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Wednesday[current].classLink 
-						 + "\">"
-						 + data.Wednesday[current].className 
-						 + "</a><br>" 
-						 + data.Wednesday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Thursday.length) {
-				output += "<td class=\"classCell thursdayCell\">"
-						 + data.Thursday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Thursday[current].classLink 
-						 + "\">"
-						 + data.Thursday[current].className 
-						 + "</a><br>" 
-						 + data.Thursday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Friday.length) {
-				output += "<td class=\"classCell fridayCell\">"
-						 + data.Friday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Friday[current].classLink 
-						 + "\">"
-						 + data.Friday[current].className 
-						 + "</a><br>" 
-						 + data.Friday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Saturday.length) {
-				output += "<td class=\"classCell saturdayCell\">"
-						 + data.Saturday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Saturday[current].classLink 
-						 + "\">"
-						 + data.Saturday[current].className 
-						 + "</a><br>" 
-						 + data.Saturday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			if (current < data.Sunday.length) {
-				output += "<td class=\"classCell sundayCell\">"
-						 + data.Sunday[current].classTime 
-						 + "<br><a href=\"" 
-						 + data.Sunday[current].classLink 
-						 + "\">"
-						 + data.Sunday[current].className 
-						 + "</a><br>" 
-						 + data.Sunday[current].classInstructor 
-						 + "</td>";
-			} else {
-				output += "<td></td>";
-			}
-			output += "</tr>";
-			current++;
-		}
-		$("#classInject").html(output);
-		greyDays();
+	loadInstructors();
+	getClassSchedule();
+
+	$("#inputGroupSelect00").change(function() {
+		location = $(this).val();
+		getClassSchedule();
 	});
+	$("#inputGroupSelect01").change(function() {
+		classType = $(this).val();
+		getClassSchedule()
+	})
+
+	function getClassMatches(day) {
+		var results = [];
+		var counter = 0;
+		while (hasMoreClasses(counter, day.length)) {
+			if ((classType === "all" || classType === day[counter].classType) && (instructor === "any" || instructor === day[counter].classInstructor)) {
+				results.push(day[counter]);
+			}
+			counter++;
+		}
+		return results;
+	}
+	//Start JQuery AJAX request for gx classes
+	function getClassSchedule() {
+		var locationFile = location + ".json";
+		$.getJSON(locationFile, function(data) {
+
+
+			var current = 0;
+			var output;
+
+			var monday = getClassMatches(data.Monday);
+			var tuesday = getClassMatches(data.Tuesday);
+			var wednesday = getClassMatches(data.Wednesday);
+			var thursday = getClassMatches(data.Thursday);
+			var friday = getClassMatches(data.Friday);
+			var saturday = getClassMatches(data.Saturday);
+			var sunday = getClassMatches(data.Sunday);
+
+			var largest = mostClasses(monday.length, tuesday.length, wednesday.length, thursday.length, friday.length, saturday.length, sunday.length);
+
+			while (hasMoreClasses(current,largest)) {
+				output += "<tr>";
+				if (current < monday.length) {
+					output += "<td class=\"classCell mondayCell\">"
+							 + monday[current].classTime 
+							 + "<br><a href=\"" 
+							 + monday[current].classLink 
+							 + "\">"
+							 + monday[current].className 
+							 + "</a><br>" 
+							 + monday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				if (current < tuesday.length) {
+					output += "<td class=\"classCell tuesdayCell\">"
+							 + tuesday[current].classTime 
+							 + "<br><a href=\"" 
+							 + tuesday[current].classLink 
+							 + "\">"
+							 + tuesday[current].className 
+							 + "</a><br>" 
+							 + tuesday[current].classInstructor 
+							 + "</td>";			
+				} else {
+					output += "<td></td>";
+				}
+				if (current < wednesday.length) {
+					output += "<td class=\"classCell wednesdayCell\">"
+							 + wednesday[current].classTime 
+							 + "<br><a href=\"" 
+							 + wednesday[current].classLink 
+							 + "\">"
+							 + wednesday[current].className 
+							 + "</a><br>" 
+							 + wednesday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				if (current < thursday.length) {
+					output += "<td class=\"classCell thursdayCell\">"
+							 + thursday[current].classTime 
+							 + "<br><a href=\"" 
+							 + thursday[current].classLink 
+							 + "\">"
+							 + thursday[current].className 
+							 + "</a><br>" 
+							 + thursday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				if (current < friday.length) {
+					output += "<td class=\"classCell fridayCell\">"
+							 + friday[current].classTime 
+							 + "<br><a href=\"" 
+							 + friday[current].classLink 
+							 + "\">"
+							 + friday[current].className 
+							 + "</a><br>" 
+							 + friday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				if (current < saturday.length) {
+					output += "<td class=\"classCell saturdayCell\">"
+							 + saturday[current].classTime 
+							 + "<br><a href=\"" 
+							 + saturday[current].classLink 
+							 + "\">"
+							 + saturday[current].className 
+							 + "</a><br>" 
+							 + saturday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				if (current < sunday.length) {
+					output += "<td class=\"classCell sundayCell\">"
+							 + sunday[current].classTime 
+							 + "<br><a href=\"" 
+							 + sunday[current].classLink 
+							 + "\">"
+							 + sunday[current].className 
+							 + "</a><br>" 
+							 + sunday[current].classInstructor 
+							 + "</td>";
+				} else {
+					output += "<td></td>";
+				}
+				output += "</tr>";
+				current++;
+			}
+			$("#classInject").html(output);
+			greyDays();
+		});
 	}
 	
 
@@ -174,8 +209,38 @@ $(document).ready(function() {
 		return largest;
 	}
 
-	function hasMoreClasses(current, largest){
-		return largest > current;
+	function mostClasses(mo, tu, we, th, fr, sa, su) {
+		var largest = mo;
+		if (tu > largest) { largest = tu; }
+		if (we > largest) { largest = we; }
+		if (th > largest) { largest = th; }
+		if (fr > largest) { largest = fr; }
+		if (sa > largest) { largest = sa; }
+		if (su > largest) { largest = su; }
+		return largest;
+	}
 
+	function hasMoreClasses(current, largest) {
+		return largest > current;
+	}
+
+	function loadInstructors() {
+		var output = "<div class=\"input-group-prepend\"><label class=\"input-group-text\" for=\"inputGroupSelect02\">Instructors:</label></div>";
+		output += "<select class=\"custom-select\" id=\"inputGroupSelect02\">";
+		output += "<option value=\"any\" selected>Any</option>";
+		$.getJSON("instructors.json", function(data) {
+			var current = 0;
+			while(current < data.instructor.length) {
+				// output += "<option value=\"";
+				// output += data.instructor[current];
+				// output += "\">";
+				// output += data.instructor[current];
+				// output += "</option>";
+				output += "hello ";
+				++current;
+			}
+			output += "</select>";
+		});
+		$("#instructorsSelect").html(output);
 	}
 });
