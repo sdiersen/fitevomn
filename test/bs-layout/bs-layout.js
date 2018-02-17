@@ -186,7 +186,7 @@ $(document).ready(function() {
 					sched = getClassMatches(data.Saturday);
 					break;
 			}
-
+			if (sched.length === 0 ) { output = ""; }
 			while (current < sched.length) {
 				output += "<tr>"
 						+ "<td style=\"text-align:center\">"
@@ -353,16 +353,16 @@ $(document).ready(function() {
 	$("#xsLocation").change(function() {
 		location = $(this).val();
 		loadInstructors();
-		getClassSchedule();
+		getClassScheduleDay(scheduleDay);
 	});
 	$("#xsInstructors").change(function() {
 		instructor = $(this).val();
 		loadInstructors();
-		getClassSchedule();
+		getClassScheduleDay(scheduleDay);
 	});
 	$("#xsClassType").change(function() {
 		classType = $(this).val();
-		getClassSchedule();
+		getClassScheduleDay(scheduleDay);
 	});
 	$("#inputGroupSelect00").change(function() {
 		location = $(this).val();
